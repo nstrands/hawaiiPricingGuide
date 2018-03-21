@@ -1,0 +1,3768 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="%%description%%"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>%%title%%</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,600,400' rel='stylesheet' type='text/css'>
+        <!-- Zozo Tabs css -->
+        <link href="css/zozo.tabs.min.css" rel="stylesheet" />
+        <!-- Shadow Box css -->
+        <link rel="stylesheet" href="http://www.achieve3000.com/js/app/shadowbox-3.0.3/shadowbox.css" type="text/css" media="all"/>
+
+<script type="text/javascript">
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.documentElement.scrollHeight + "px";
+  }
+</script>
+	<!-- Base Styles --><style type="text/css">
+
+	/************************
+
+	Template Style Guide
+
+	-Colors:
+	    Primary: #fff
+	    Secondary: #ddd
+	    Accent-Red: #da4d3d
+	    Accent-Yellow: #ffc820
+	    Dark-text: #303030
+	    Footer-&-Dark-Background: #242424
+	    Regular-Copy: #666
+
+	-Typography:
+	   Fonts: // If fonts aren't loading correctly pardot's system probably inlined a different font style on the node that isn't rendering correctly
+
+	        Open Sans:
+	            Weights:
+                    300: Light
+                    400: Normal
+                    600: Semi-Bold
+                    700: Bold
+
+	        Headers:
+	            Family: Open Sans
+	            Default Weight: 300
+
+    	    Secondary:
+    	        Family: Open Sans
+    	        Size: 15px
+    	        LIne Height: 24px
+    	        Default Weight: 400
+
+	************************/
+
+		html, body{
+		    margin: 0px;
+		    width:100%;
+		}
+		body {overflow-x: hidden;}
+		p,a, span, strong, i, b, input, select, textarea{
+		    color:#666;
+		    font-size: 15px;
+            line-height: 24px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+		}
+		strong {
+		font-weight:600;}
+
+		#list-right { float:right}
+
+		li{
+		    color:#666;
+		    font-size: 15px;
+            line-height: 24px;
+            font-family: 'Open Sans', sans-serif;
+		    margin: 1em 0px;
+		    font-weight: 300;
+		}
+		select{
+		    color:#999999;
+		}
+
+		h1,h2,h3,h4,h5,h6, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{
+		    color:#303030;
+		    font-family: 'Open Sans', sans-serif;
+		    font-weight:300;
+		    margin:0px;
+		}
+
+		h2 strong, h2{
+		    font-size:36px;
+		    line-height: 42px;
+		}
+
+		img {
+   width: auto;
+   height: auto;
+   max-width: 100%;
+}
+		.hero .content{
+		    padding-top: 15px;
+		}
+		.grey{
+		    background:#f5f5f5;
+		}
+		.white{
+		    background:#fff;
+		}
+		.content-section{
+		    width: 100%;
+		    padding-top: 45px;
+			padding-bottom: 35px;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+
+		#tabbed-nav .founders-icons li img {
+		width:120px;
+		max-width:150px;
+		height:auto;
+		}
+
+		#tabbed-nav div.two-column.left h1 {
+			line-height:150%;
+			padding-top:30px;
+			color:#666666;
+		}
+
+		#tabbed-nav div.two-column.left h3 {
+			font-size:28px;
+			padding-top:30px;
+			line-height:34px;
+		}
+
+		#tabbed-nav div.two-column.left h3 span {
+			font-size:28px;
+			line-height:34px;
+			font-weight:bold;
+		}
+
+		#tabbed-nav div.two-column.left h4.first, #tabbed-nav div.two-column.left h4.first a {
+			font-size:28px;
+			line-height:34px;
+			margin-top:30px;
+		}
+
+
+		#tabbed-nav div.two-column.left h4.second, #tabbed-nav div.two-column.left h4.second a {
+			font-size:28px;
+			line-height:34px;
+			margin-top:25px;
+		}
+
+		#tabbed-nav div.two-column.left h4.first span, #tabbed-nav div.two-column.left h4.second span {
+			 font-size:28px;
+			 font-weight:bold;
+		}
+
+		#tabbed-nav div.two-column.left h4.second a, #tabbed-nav div.two-column.left h4.first a {
+			text-decoration:none;
+			color:inherit;
+		}
+
+		#tabbed-nav div.two-column.right h3 {
+			 color:#555555;
+			 font-size:28px;
+			 padding-top:30px;
+			 font-weight:300;
+			 line-height:34px;
+		}
+
+		#tabbed-nav div.two-column.right h3 span {
+			color:#555555;
+			 font-size:28px;
+			 font-weight:700;
+			 line-height:34px;
+		}
+
+		#tabbed-nav div.two-column.right h4 {
+			color:#555555;
+			font-size:18px;
+			font-weight:300;
+			font-style:italic;
+			line-height:24px;
+		}
+
+		section p, section img, section div.two-thirds, section div.one-third, section div.half{
+		   // display:inline-block;
+		    max-width: 100%;
+		}
+
+		.two-column h2{
+	        font-size:21px;
+	        line-height:27px;
+	        font-weight: 600;
+	    }
+	    .two-column p{
+	        font-weight: 300;
+	    }
+
+	    #lightbox {
+            position:fixed; /* keeps the lightbox window in the current viewport */
+            z-index:1000;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:url(http://ww2.achieve3000.com/l/11012/2015-01-12/2w12qy/11012/127088/overlay.png) repeat;
+            text-align:center;
+        }
+        #lightbox img {
+            box-shadow:0 0 25px #111;
+            -webkit-box-shadow:0 0 25px #111;
+            -moz-box-shadow:0 0 25px #111;
+            margin-top: 120px;
+            max-width:1180px;
+        }
+
+        div.layout{
+            position:relative;
+            z-index:2;
+            width: 100%;
+            background: #fff;
+        }
+
+        .videos img {
+            width:100%;
+            height:auto;
+        }
+
+        a.video {
+            float: left;
+            position: relative;
+        }
+
+        a.video span {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("http://ww2.achieve3000.com/l/11012/2015-01-15/2w1mn9/11012/127362/play_btn.png") no-repeat;
+            background-position: 50% 50%;
+            background-size: 300%;
+        }
+
+		.hero a.hero-button { /* Red Button in the Top Hero Image */
+            color: #ffffff;
+            background: #da4d3d;
+            display: block;
+            font-size: 18px;
+			font-weight:700;
+            width: 320px;
+            margin: 0 auto;
+            text-indent: 0px;
+            height: 48px;
+            border-radius: 24px;
+            line-height: 48px;
+            text-align: center;
+            text-decoration: none;
+		}
+
+		.header__right a.header-button { /* Red Button in the Top Header */
+            color: #da4d3d;
+            background: #ffffff;
+            display: block;
+            font-size: 15px;
+			font-weight:400;
+            width: 240px;
+            margin: 0 auto;
+            text-indent: 0px;
+            height: 40px;
+            border-radius: 24px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+			border: 1px solid #da4d3d;
+		}
+
+		.text-left {
+			text-align:left;
+		}
+.go-top p {
+          margin: 8px;
+        }
+		.go-top p span {
+          color: #ffffff;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        .go-top {
+              line-height: 10px;
+      padding: 0px 0px;
+      position: fixed;
+      bottom: 1em;
+      right: 1em;
+      border-radius: 5px;
+      z-index: 101;
+      display: none;
+      text-decoration: none;
+      background-color: #333333;
+            }
+        @media screen and (max-width: 480px) {
+            a.video span {
+                background-size: 400%;
+            }
+
+            div.six-column{
+                width:580px;
+            }
+        }
+
+		</style><!-- HEADER STYLES --><style type="text/css">
+		header{
+		    display: block;
+            width: 100%;
+            color: #fff;
+            height: 115px;
+		}
+
+		header .header__left{
+		    float: left;
+            width: auto;
+            padding: 23px 0px;
+		}
+
+
+
+		header .header__left img{
+		    height: 65px;
+		    width: auto;
+		}
+
+		.header__right{
+		   float: right;
+            width: auto;
+            padding: 38px 0px;
+            position: relative;
+            right: -5px;
+		}
+
+		.header__right__button{
+		    border: 1px solid #da4d3d;
+            background: #fff;
+            color: #da4d3d;
+            border-radius: 25px;
+            margin-left: 25px;
+            height: auto;
+			min-height:40px;
+            float: left;
+		}
+
+    	.header__right__button p{
+    	    line-height: 1em;
+            margin: 7px;
+            font-size: 15px;
+            color: #da4d3d;
+            padding: 0 12px;
+    	}
+
+    	.header__right__button p a{
+            color: #da4d3d;
+            line-height:15px;
+            text-decoration:none;
+    	}
+		</style><!-- BEFORE/AFTER HERO BAR STYLES--><style type="text/css">
+        .small_bar_one{
+            background:#303030;
+            padding: 5px 0px;
+
+        }
+
+        .small_bar_one .site-slogan{
+            line-height: 2em;
+            color: #fff;
+            font-style: italic;
+            font-size: 16px;
+            display: inline-block;
+            font-weight:300;
+            margin:0px;
+        }
+
+        .small_bar_two{
+            height:105px;
+			/*opacity:0.8;*/
+			background-color:#000;
+        }
+
+        .small_bar_two .header__icons{
+            margin: 0 30px;
+        }
+
+        .small_bar_two .header__icons .icon{
+            display: inline-block;
+            margin-right: 2.6%;
+        }
+
+        .small_bar_two .header__icons div:last-child {
+            margin-right: 0;
+        }
+
+        .small_bar_two .header__icons .icon img{
+            height: 44px;
+            margin-top: 15px;
+            width: auto;
+        }
+
+        .small_bar_two{
+            min-height: 25px;
+            padding: 5px 0px;
+        }
+
+        </style><!-- SECTION STYLES --><style type="text/css">
+
+		.first-section{
+		    background: #fff;
+		}
+
+		.second-section{
+		    background: #f5f5f5;
+		}
+
+		.third-section{
+		    background: #fff;
+		}
+
+		/* Custom section with secondary background styles below */
+
+		.custom-section-secondary-background{
+		    background: #ddd;
+		}
+		/* Custom section with secondary background styles below */
+
+		.custom-section-primary-background{
+		    background: #fff;
+		}
+
+        .content{
+    	    width:1180px;
+    	    margin: 0 auto;
+    	}
+
+
+		#Footer {
+            text-align: center;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+		#FooterGray {
+            text-align: center;
+            background-color: #dddddd;
+            color: #FFFFFF;
+        }
+
+        .two-column{
+            vertical-align:top;
+        }
+
+        p.two-column{
+            margin: 0px;
+        }
+
+        .two-column.two-thirds.right{
+            margin-left:30px;
+            float:right;
+        }
+
+        .two-column.one-third.right{
+            float:right;
+        }
+
+		.two-column.half.right{
+            float:right;
+        }
+
+        .two-column.two-thirds.left{
+            margin-right:30px;
+            float:left;
+        }
+
+        .clearfix:after {
+         visibility: hidden;
+         display: block;
+         font-size: 0;
+         content: " ";
+         clear: both;
+         height: 0;
+         }
+
+        * html .clearfix             { zoom: 1; } /* IE6 */
+
+        *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+        .two-column.one-third{
+            width:34%;
+        }
+
+		.two-column.half{
+            width:45%;
+        }
+
+        .two-column.one-third img{
+            width:100%;
+            margin: 0em 0em 1em;
+        }
+
+		.two-column.half img{
+            width:100%;
+            margin: 0em 0em 1em;
+        }
+
+        .two-column.two-thirds{
+            width:57.7%;
+        }
+
+		</style><!-- MOBILE MENU STYLES --><style type="text/css">
+        .mobileMenu{
+            position:fixed;
+            top:0;
+            right:0;
+            display:block;
+            background:#101010;
+            padding:0 25px;
+            height:100%;
+            overflow:hidden;
+            width:210px;
+        }
+
+        .mobileMenu p.menu{
+    	    line-height:85px;
+    	    width: 100%;
+    	}
+
+    	.mobileMenu p.menu span.right{
+            line-height:85px;
+            float: right;
+            cursor:pointer;
+    	}
+
+        .mobileMenu .header__right__button {
+            background: #da4d3d;
+            margin: 0;
+            float:none;
+        }
+
+    	.mobileMenu .header__right__button p {
+            color: #fff;
+    	}
+
+    	.mobileMenu .header__right__button p a{
+            color: #fff;
+    	}
+
+        .header__menu{
+            padding:20px 0px;
+        }
+
+        .header__menu ul{
+            list-style-type:none;
+            padding:0px;
+        }
+
+        .header__menu ul li a{
+            text-decoration:none;
+            color:white;
+        }
+
+        .menu-icon{
+            display:none;
+            width:50px;
+            height:50px;
+            background:red;
+            color:#fff;
+        }
+
+        @media (max-width:959px){
+            .menu-icon{
+                display:block;
+            }
+
+        }
+        </style><style type="text/css">
+            .burger-menu-wrapper{
+                background: #da4d3d;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                margin: 0;
+                margin: 0 0 0 10px;
+                float: right;
+            }
+
+            .burger-menu-wrapper:focus{
+                outline:none;
+            }
+
+            .burger-menu-wrapper.as_x .burger-menu__inner{
+                padding-left:5px;
+            }
+
+            .burger-menu__inner{
+                margin: 4px auto 5px auto;
+                display: block;
+                width: 20px;
+            }
+
+            .burger-menu__line{
+                border: none;
+                border-bottom: 2px white solid;
+                transition-property: all;
+                transition-duration: 0.3s;
+            }
+
+            .burger-menu-wrapper.as_x hr{
+                transform-origin: left center;
+                -webkit-transform-origin: left center;
+            }
+
+            .burger-menu-wrapper.as_x .burger-menu__line.top{
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+            }
+
+            .burger-menu-wrapper.as_x .burger-menu__line.middle{
+                opacity:0;
+            }
+
+            .burger-menu-wrapper.as_x .burger-menu__line.bottom{
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+            }
+
+            /* IE9 & Safari Windows*/
+            .burger-menu-wrapper.as_x .burger-menu__line.top{
+                (;position: relative;);
+                (;top: 2px;);
+                (;left: 2px;);
+                position: relative\9;
+                top: 9px\9;
+                right: 2px\9;
+            }
+
+            .burger-menu-wrapper.as_x .burger-menu__line.bottom{
+                (;position: relative;);
+                (;left: 2px;);
+                position: relative\9;
+                bottom: 8px\9;
+                right: 2px\9;
+            }
+
+            /* IE10 & IE11 */
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+                .burger-menu-wrapper.as_x .burger-menu__line.top{
+                    position: relative;
+                    top: 1px;
+                    left: 1px;
+                }
+
+                .burger-menu-wrapper.as_x .burger-menu__line.bottom{
+                    position: relative;
+                    bottom: 2px;
+                    left: 1px;
+                }
+            }
+
+        </style><!--HERO STYLES --><style type="text/css">
+        .hero{
+            height: auto;
+            padding: 45px 0px;
+              position: relative;
+              z-index: -1;
+        }
+        .hero .hero__left-content{
+            width: 50%;
+            padding: 0px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .hero .hero__left-content .hero__header{
+            font-weight: 700;
+            font-size:48px;
+            color: #fff;
+            line-height: 54px;
+        }
+
+        .hero .hero__left-content .hero__subheader{
+            color: #fff;
+            font-size: 20px;
+            line-height: 24px;
+			font-weight:500;
+        }
+
+		 .hero .hero__left-content .hero__description{
+            color: #fff;
+            font-size: 20px;
+            line-height: 24px;
+			font-weight:500;
+        }
+
+        .hero .hero__left-content .hero__left-content-inner{
+            width: 95%;
+            margin-top:5px;
+        }
+
+        .hero .hero__left-content .hero__left-content-inner p{
+            color: #fff;
+            font-size: 18px;
+            line-height: 22px;
+            display:inline-block;
+        }
+
+        .hero .hero__left-content .hero__left-content-inner h2{
+            font-weight: 600;
+            font-size: 36px;
+            color: #ffc820;
+            line-height: 42px;
+        }
+
+        .hero .hero__left-content .hero__left-content-inner p img{
+            float: left;
+            margin-right: 20px;
+            margin-top: -5px;
+        }
+
+        .hero .hero__left-content .hero__left-content-inner img{
+            float: left;
+            margin-right: 20px;
+            margin-top: -5px;
+        }
+
+        .hero .hero__right-content{
+            width: 50%;
+            display: inline-block;
+            vertical-align: bottom;
+            padding: 0px;
+			text-align:right;
+			overflow:hidden;max-height:600px;height:450px;
+
+        }
+        </style><!-- FORM STYLES--><style type="text/css">
+		/************************
+
+    	Form Style Guide
+
+    	-Colors:
+    	    Primary: #fff
+    	    Secondary: #ddd
+
+    	-Typography:
+    	        Fonts: // If fonts aren't loading correctly pardot's system probably inlined a different font style on the node that isn't rendering correctly
+	                Primary:
+	                    Family:
+	                    Size:XXpx need to change that
+	                    Line Height:
+	                    Default Weight:
+
+    	            Secondary:
+    	                Family:
+    	                Size:
+    	                Line Height:
+    	                Default Weight:
+
+    	************************/
+        .content-tag{
+            background: #da4d3d;
+        }
+
+        .content-tag .form-title{
+            text-align: center;
+            color: #fff;
+        }
+
+        .content-tag .form-description{
+            text-align: center;
+            color: #fff;
+            font-weight:300;
+        }
+
+        .content-tag .form-description p{
+            text-align: center;
+            color: #fff;
+            font-weight:300;
+            width: 600px;
+        }
+
+        .content-tag form.form p label{
+            color:#fff;
+            font-size: 12px;
+            display:block;
+        }
+
+        .custom_form #pardot-form{
+            width:100%;
+            display:block;
+            margin:0 auto;
+            position:relative;
+        }
+
+        #pardot-form .form-field{
+            margin: 10px;
+            width:100%;
+            vertical-align:bottom;
+            display:inline-block;
+        }
+        .custom_form #pardot-form p.error-message, .custom_form #pardot-form p.errors{
+            color:#fff;
+            margin:5px 0px;
+             background: none repeat scroll 0% 0% #8B0000;
+             //padding:0 87px;
+        }
+        form.form p.no-label, form.form p.email-pref {
+             //margin: 0.2em 0.5em 0.6em 160px;
+             padding: 0px;
+             color:#8B0000;
+              margin: 0 auto !important;
+            width: 42%;
+            text-align: left;
+        }
+        .custom_form #pardot-form p.error-message{
+            font-size: 12px;
+            margin: 0 20px;
+        }
+
+        .custom_form #pardot-form p.errors{
+            display:block;
+
+        }
+        form.form p.error label {
+           color: #8B0000;
+        }
+
+        .custom_form #pardot-form p.error > input {
+            border: 2px solid #ff0000;
+            height:30px;
+        }
+        .custom_form #pardot-form .form-field {margin: 8px 0px }
+        body .custom_form .form-bg #pardot-form submit {
+            line-height: normal;
+              height: 30px;
+              border-radius: 0px;
+              border: 1px solid #ccc;
+              width: 200px;
+              text-indent: 20px;
+              background: #fff;
+        }
+
+        .custom_form #pardot-form input, .custom_form #pardot-form select, .custom_form #pardot-form submit{
+              line-height: normal;
+              height: 30px;
+              border-radius: 0px;
+              border: 1px solid #ccc;
+              width: 55%;
+              text-indent: 0px;padding: 0;
+        }
+
+        .custom_form #pardot-form input {padding-left: 4px;}
+    .custom_form #pardot-form textarea{
+            line-height: 24px;
+            min-height:120px;
+            border-radius: 4px;
+            border: none;
+            width: 90%;
+            padding-top:10px;
+            padding-left:20px;
+            padding-right:20px;
+    }
+
+        .custom_form #pardot-form select{
+            background:#fff;
+            height:30px;
+            width:57%;
+
+
+
+        }
+
+         }
+
+
+        .custom_form #pardot-form select::-ms-expand {
+            display: none;
+        }
+
+        @media screen\0 {
+            .custom_form #pardot-form select{
+                padding-left: 20px;
+            }
+        }
+
+       /* .custom_form #pardot-form .pd-select::after{
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-top: solid 1px #999;
+            border-right: solid 1px #999;
+            position: absolute;
+            right: 55px;
+            bottom: 97px;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }*/
+
+        .custom_form #pardot-form .submit{
+            display: block;
+            margin: 16px auto 20px;
+            width:30%;
+        }
+        .custom_form .pd-select {width: 100%;}
+        .custom_form .pd-select::after{ display: none;}
+        .custom_form #pardot-form input[type="submit"] {
+            color: #000;
+            background: #fff;
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            width: 88px;
+            margin: 0 auto;
+            text-indent:0px;
+            height:30px;
+            border-radius: 0px;
+        }
+
+        #pardot-form input[type="submit"], p.submit a.submit {
+  color: #000;
+  background: #ffc820;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  width: 260px;
+  margin: 0 auto;
+  text-indent: 0px;
+  height: 48px;
+  border-radius: 24px;
+}
+        p.submit a.submit{
+            line-height:48px;
+            text-decoration:none;
+        }
+
+    #pardot-form, iframe.register html  {
+            width:93% !important;
+            display:block;
+            margin:0 auto;
+            position:relative;
+        }
+
+        form.form p.required label, form.form span.required label {
+  background: url(/images/required.gif) no-repeat top right;
+}
+
+        #pardot-form p.error-message, iframe form.form p.error-message, #pardot-form p.errors, iframe form.form p.errors {
+            color:#fff;
+            margin:5px 0px;
+        }
+
+        #pardot-form p.error-message, iframe form.form p.error-message {
+            font-size: 12px;
+            margin: 0 20px;
+        }
+
+        #pardot-form p.errors, iframe form.form p.errors {
+            display:block;
+        }
+
+        #pardot-form p.error > input, iframe form.form p.p.error > input {
+            border: 2px solid #ffc820;
+            height:42px;
+        }
+
+        #pardot-form label, iframe form.form label {
+            display:none;
+        }
+        .custom_form #pardot-form label{
+            display: block;
+            width:26%;
+        }
+        form.form p label{
+              color: #000000;
+              float: left;
+              display: block;
+              margin: 0;
+              padding: 3px 13px 0 0;
+              text-align: right;
+              width: 140px;
+              font-weight: 600;
+  }
+        #pardot-form input, iframe form.form input, #pardot-form select, iframe form.form select, #pardot-form submit, iframe form.form submit {
+            line-height: 46px;
+            height: 46px;
+            border-radius: 4px;
+            border: none;
+            width: 100%;
+            text-indent: 20px;
+        }
+
+        #pardot-form select, iframe form.form select{
+            background:#fff;
+            height:48px;
+            width:380px;
+        }
+        #pardot-form textarea, iframe form.form textarea {
+            line-height: 24px;
+            min-height:120px;
+            border-radius: 4px;
+            border: none;
+            width: 90%;
+            padding-top:10px;
+            padding-left:20px;
+            padding-right:20px;
+    }
+
+
+        #pardot-form select::-ms-expand, iframe form.form select::-ms-expand {
+            display: none;
+        }
+
+        @media screen\0 {
+            #pardot-form select{
+                padding-left: 20px;
+            }
+        }
+
+        #pardot-form .pd-select::after, iframe form.form .pd-select::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-top: solid 1px #999;
+            border-right: solid 1px #999;
+            position: absolute;
+            right: 55px;
+            bottom: 97px;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        #pardot-form .submit, iframe form.form .submit {
+            display: block;
+            margin: 16px auto 0px;
+        }
+            #pardot-form input[type="submit"], iframe form.form input[type="submit"],
+        p.submit a.submit{
+            color: #000;
+            background: #ffc820;
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            width: 260px;
+            margin: 0 auto;
+            text-indent:0px;
+            height:48px;
+            border-radius: 24px;
+        }
+
+        p.submit a.submit{
+            line-height:48px;
+            text-decoration:none;
+        }
+        </style><!--[if lt IE 10]>
+        <style type="text/css">
+            #pardot-form .pd-select::after{
+                display:none;
+                width: 0;
+                height: 0;
+            }
+        </style>
+        <![endif]--><!--[if lt IE 9]>
+        <style type="text/css">
+            .burger-menu-wrapper.as_x .burger-menu__inner{
+                padding-left:0;
+            }
+
+            .burger-menu-wrapper.as_x .burger-menu__line.middle{
+                opacity:1;
+            }
+        </style>
+        <![endif]--><style type="text/css">
+        section.content-blocks{
+            position:relative;
+        }
+        section.content-blocks:before{
+            background:url('http://ww2.achieve3000.com/l/11012/2015-01-12/2w12d7/11012/127078/BC17_building_left.gif');
+            background-position:top left;
+            background-repeat:no-repeat;
+            content: " ";
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top:0;  background-size: cover;
+            background-position:right center;
+        }
+        section.content-blocks:after{
+            background:url('http://ww2.achieve3000.com/l/11012/2015-01-12/2w12d9/11012/127080/BC17_building_right.gif');
+            background-position:top right;
+            background-repeat:no-repeat;
+            content: " ";
+            width: 59%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            right:0;  background-size: cover;
+            background-position: center left;
+        }
+        div.six-column{
+            width:620px;
+            margin:auto;
+        }
+        .six-column > div > h3{
+            font-weight:bold;
+            font-size:21px;
+            margin-bottom:-5px;
+        }
+        .six-column  > div > p{
+            font-weight:300;
+        }
+        .six-column h2{
+            margin-bottom: 54px;
+        }
+        .six-column > div > p:first-of-type {
+            margin-bottom: 48px;
+        }
+        </style><!-- FOOTER STYLES --><style type="text/css">
+        #Footer{
+            background: #242424;
+        }
+		#FooterGray{
+            background: #dddddd;
+        }
+
+        #Footer table{
+            width:auto;
+        }
+
+		#FooterGray table{
+            width:auto;
+        }
+
+        #Footer .footer__header{
+            font-family: "proxima-nova", sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight:600;
+            color: #666666;
+            text-align:left;
+            margin-bottom:8px;
+        }
+		 #FooterGray .footer__header{
+            font-family: "proxima-nova", sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight:600;
+            color: #666666;
+            text-align:left;
+            margin-bottom:8px;
+        }
+
+        #Footer .footer__top-content,
+        #Footer .footer__bottom-content{
+            display:block;
+        }
+
+		 #FooterGray .footer__top-content,
+        #FooterGray .footer__bottom-content{
+            display:block;
+        }
+
+        #Footer .footer__top-content{
+            padding: 50px 0px;
+            min-height: 130px;
+        }
+		#FooterGray .footer__top-content{
+            padding: 50px 0px;
+            min-height: 130px;
+        }
+
+
+        #Footer .footer__top-content .footer__contact-us{
+            //display: table-cell;
+            width: 33%;
+            padding: 0px;
+            vertical-align: top;
+            float:left;
+        }
+
+		#FooterGray .footer__top-content .footer__contact-us{
+            //display: table-cell;
+            width: 33%;
+            padding: 0px;
+            vertical-align: top;
+            float:left;
+        }
+
+        #Footer .footer__top-content .footer__contact-us .contact-information{
+            text-align: left;
+            color: #bebebe;
+            margin-left: 85px;
+            display: block;
+        }
+
+		 #FooterGray .footer__top-content .footer__contact-us .contact-information{
+
+            text-align: left;
+            color: #666666;
+            margin-left: 85px;
+            display: block;
+        }
+
+        #Footer .footer__top-content .footer__contact-us .contact-information p{
+            margin:0px;
+            color: #ccc;
+        }
+		#FooterGray .footer__top-content .footer__contact-us .contact-information p{
+            margin:0px;
+            color: #666;
+        }
+
+        #Footer .footer__top-content .footer__contact-us .contact-label{
+            font-family: "proxima-nova", sans-serif;
+            font-weight: 300;
+            color: #ccc;
+            margin: 0 0 0 -2px;
+            display: block;
+            float: left;
+            text-align: left;
+            line-height:24px;
+        }
+		#FooterGray .footer__top-content .footer__contact-us .contact-label{
+            font-family: "proxima-nova", sans-serif;
+            font-weight: 300;
+            color: #666;
+            margin: 0 0 0 -2px;
+            display: block;
+            float: left;
+            text-align: left;
+            line-height:24px;
+        }
+
+        #Footer .footer__top-content .footer__corporate-headquarters{
+            //display: table-cell;
+            vertical-align: top;
+            width: 33%;
+            float:left;
+        }
+		#FooterGray .footer__top-content .footer__corporate-headquarters{
+            //display: table-cell;
+            vertical-align: top;
+            width: 33%;
+            float:left;
+        }
+
+        #Footer .footer__corporate-headquarters ul{
+            list-style-type:none;
+            padding:0px;
+            margin: 0px;
+        }
+		#FooterGray .footer__corporate-headquarters ul{
+            list-style-type:none;
+            padding:0px;
+            margin: 0px;
+        }
+
+        #Footer .footer__corporate-headquarters ul li,
+        #Footer .footer__top-content .footer__corporate-headquarters ul li p{
+            margin: 0px;
+            text-align: left;
+            color: #ccc;
+            display: block;
+        }
+		#FooterGray .footer__corporate-headquarters ul li,
+        #FooterGray .footer__top-content .footer__corporate-headquarters ul li p{
+            margin: 0px;
+            text-align: left;
+            color: #666;
+            display: block;
+        }
+
+        #Footer .footer__top-content .footer__social-media-links{
+            //display: table-cell;
+            vertical-align: top;
+            width: 100%;
+            float:left;
+            border-top:1px solid #2d2d2d;
+            padding: 20px 0;
+        }
+
+        .social_media_image{
+            margin-left:20px;
+            display:inline-block;
+        }
+
+        .social_media_image p{
+            margin:0px;
+        }
+
+        .social_media_image, .social_media_image a, .social_media_image a img{
+            width:40px;
+            height:40px;
+        }
+
+        #Footer .footer__bottom-content{
+            border-top: 1px #2d2d2d solid;
+            padding: 15px 0px;
+            clear:both;
+        }
+		#FooterGray .footer__bottom-content{
+            padding: 15px 0px;
+            clear:both;
+        }
+
+        #Footer .footer__bottom-content .footer-navigation{
+            display:block;
+            text-align: left;
+        }
+
+        #Footer .footer__bottom-content .footer-navigation__element{
+            display:inline-block;
+        }
+
+        #Footer .footer__bottom-content .footer-navigation__element a{
+            color: #ffc820;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        #Footer .footer__bottom-content .footer-navigation__pipe{
+            color:#999999;
+        }
+
+         #Footer .footer__bottom-content .footer-copyright{
+            display:block;
+        }
+
+        #Footer .footer__bottom-content .footer-copyright p{
+            color: #666666;
+            text-align: left;
+            font-size: 12px;
+            margin: 0px;
+        }
+
+        #Footer .footer__bottom-content .footer-mvp-creditline{
+            float:right;
+        }
+
+        #Footer .footer__bottom-content .footer-mvp-creditline p{
+            text-align: right;
+            margin: 0px;
+            font-size: 12px;
+        }
+
+        #Footer .footer__bottom-content .footer-mvp-creditline a{
+            font-size: 12px;
+            text-decoration: none;
+        }
+        </style>
+        <!-- FORM STYLES-->
+
+	    <style type="text/css">
+		/************************
+
+    	Form Style Guide
+
+    	-Colors:
+    	    Primary: #fff
+    	    Secondary: #ddd
+
+    	-Typography:
+    	        Fonts: // If fonts aren't loading correctly pardot's system probably inlined a different font style on the node that isn't rendering correctly
+	                Primary:
+	                    Family:
+	                    Size:XXpx need to change that
+	                    Line Height:
+	                    Default Weight:
+
+    	            Secondary:
+    	                Family:
+    	                Size:
+    	                Line Height:
+    	                Default Weight:
+
+    	************************/
+        .content-tag{
+            background: #da4d3d;
+        }
+
+        .content-tag .form-title{
+            text-align: center;
+            color: #fff;
+        }
+
+        .content-tag .form-description{
+            text-align: center;
+            color: #fff;
+            font-weight:300;
+        }
+
+        .content-tag .form-description p{
+            text-align: center;
+            color: #fff;
+            font-weight:300;
+            width: 600px;
+            margin:12px auto !important;
+        }
+
+        .content-tag form.form p label{
+            color:#fff;
+            font-size: 12px;
+            display:block;
+        }
+
+
+        p.submit a.submit{
+            color: #000;
+            background: #ffc820;
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            width: 260px;
+            margin: 0 auto;
+            text-indent:0px;
+            height:48px;
+            border-radius: 24px;
+        }
+
+        p.submit a.submit{
+            line-height:48px;
+            text-decoration:none;
+        }
+
+
+
+
+
+
+
+        .Content--white,  .Content--white.has-chevron:after, .Content--white.has-chevron:before {
+  background-color: #fff;
+}
+.Content--white .Container {
+  z-index: 10;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Content {
+  clear: both;
+  padding: 3rem 0;
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 48rem) {
+.Content {
+  clear: both;
+  padding: 3.75rem 0;
+}
+section.content-blocks:before{
+    width:30%;
+    height:100%;
+    background-size:cover;
+     background-position:right center;
+}
+section.content-blocks:after{
+    width:39%;
+    height:100%;
+    background-size:cover;background-position: center left;
+}
+ #Footer .footer__top-content .footer__social-media-links{
+
+  width: 100%;
+  position: relative;
+  //top: 24px;
+display:inline-block;
+border-top:1px solid #2d2d2d;
+padding:20px 0;
+}
+
+}
+
+@media (min-width: 64rem) {
+.FlexibleColumns--right.FlexibleColumns-text {
+  width: 45%;
+  margin-left: 5%;
+}
+.FlexibleColumns--right.FlexibleColumns-text .Content {
+  clear: both;
+  padding: 5.25rem 0;
+}
+section.content-blocks:before{
+    width:30%;
+    height:100%;
+    background-size:cover;
+     background-position:right center;
+}
+section.content-blocks:after{
+    width:32%;
+    height:100%;
+    background-size:cover;
+    background-position: center left;
+}
+ #Footer .footer__top-content .footer__social-media-links{
+
+  width: 100%;
+  position: relative;
+  top: 24px;
+display:table-cell;
+}
+
+}
+.Typography {
+  color: #7d7d7d;
+}
+.Heading4 {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.429;
+}
+.Heading1, .Heading2, .Heading3, .Heading4, .Heading5, .Heading6 {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #404040;
+}
+.Heading1+p, .Heading2+p, .Heading3+p, .Heading4+p, .Heading5+p, .Heading6+p {
+  margin-top: 6px;
+}
+.Typography p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+.FlexibleColumns-text p {
+  padding-bottom: 1.4em;
+}
+.FlexibleColumns-text ul {
+  padding-bottom: .9375em;
+}
+.Typography ol, .Typography ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  padding-left: 30px;
+  line-height: 1.6;
+}
+.FlexibleColumns--right {
+  position: relative;
+  float: right;
+}
+@media (min-width: 56.25rem) {
+.FlexibleColumns-image.FlexibleColumns--left, .FlexibleColumns-video.FlexibleColumns--left {
+  padding-right: 10px;
+  padding-left: 0;
+}
+.FlexibleColumns--left {
+  position: relative;
+  float: left;
+  padding: 0;
+}
+section.content-blocks:before{
+    width:30%;
+    height:100%;
+    background-size:cover;
+     background-position:right center;
+}
+section.content-blocks:after{
+    width:32%;
+    height:100%;
+    background-size:cover;
+    background-position: center left;
+}
+
+.FlexibleColumns-image, .FlexibleColumns-video {
+  width: 44%;
+  margin-top: 0;
+}
+#Footer .footer__top-content .footer__social-media-links{
+
+   width: 33.33333%;
+  padding: 0;
+  text-align: right;
+  top:0;
+  border:none;
+}
+
+
+}
+@media (min-width: 30rem) {
+.FlexibleColumns-image, .FlexibleColumns-video {
+  text-align: left;
+}
+section.content-blocks:before{
+    width:21%;
+    height:100%;
+    background-size:cover;
+     background-position:right center;
+}
+section.content-blocks:after{
+    width:21%;
+    height:100%;
+    background-size:cover;
+    background-position:center left;
+}
+
+
+
+}
+.FlexibleColumns-image img {
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+}
+
+/*form section */
+.form-header {
+  background-color: #636363;
+  text-align: center;
+  padding: 10px;
+}
+.form-header p {
+  color: #fff;
+  font-size: 30px;
+}
+p.downloadp {font-size: 16px;  margin: 0 0 10px 0;}
+.secondcolumn-title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;margin-bottom: 10px;
+}
+.secondcolumn {
+  /*margin-top: -109px;*/
+  padding-left: 0px;
+}
+.form-bg {
+  background-color: #EAEAEA;
+  padding: 20px 20px 30px;
+}
+.mandatoryfieldstext {
+  padding-left: 15px;
+}
+form.form {
+  color: #666;
+  font: 100%/120% Tahoma,Arial,Helvetica,Verdana,sans-serif;
+  font-size: 13px;
+  margin: .5em 0 1em 0;
+  padding: .5em;
+}
+@media only screen and (max-width: 1250px) {
+.secondcolumn {
+    width: 100%;
+    float: left;
+    //margin-top: 0px !important;
+}
+
+div.six-column{
+    width:58%;
+}
+section.content-blocks:before{
+    width:21%;
+    height:100%;
+    background-size:cover;
+     background-position:right center;
+}
+section.content-blocks:after{
+    width:21%;
+    height:100%;
+    background-size:cover;
+    background-position:center left;
+}
+   .custom_form #pardot-form p.errors{
+            color:#fff;
+            //margin: 5px 31px 10px 61px;
+            background: none repeat scroll 0% 0% #8B0000;
+            //padding: 0 41px;
+            text-align:center;
+        }
+          form.form p.no-label, form.form p.email-pref {
+            width: 45%;
+            margin:0 122px;
+          }
+
+
+
+}
+@media only screen and (max-width: 499px) {
+    #pardot-form .form-field {
+          margin: 0;
+  width: 80%;
+  display: block;
+    }
+    .custom_form #pardot-form label {
+  display: block;
+  text-align: left;
+  width:auto
+    }
+    .custom_form #pardot-form input,.custom_form #pardot-form select, .custom_form #pardot-form submit {width: 96% !important;}
+    .h2.secondcolumn-title {line-height: normal;}
+    .custom_form #pardot-form input[type="submit"] {width: 100% !important;}
+         form.form p.error {  margin: .2em .5em .6em 0px !important; color:#8B0000;}
+         .custom_form #pardot-form select {width: 97.5% !important;}
+         form.form p.no-label, form.form p.email-pref {
+  width: 60%;
+}
+
+}
+@media only screen and (min-width: 992px) {
+.hero {height: 470px;}
+
+
+}
+
+h2 sup {
+  font-size: 15px;
+  width: 18px;
+  display: inline-block;
+  height: 18px;
+  /* float: left; */
+  text-align: center;
+  line-height: 17px;
+  }
+
+        </style>
+
+	</head>
+
+
+
+	<body>
+
+	<section class="mobileMenu">
+
+        <p class="menu">MENU <span class="right">x</span></p>
+
+        <button class="header__right__button contact-us">
+            <p>What's New<br>with Achieve3000</p>
+        </button>
+
+        <aside class="header__menu">
+
+
+        </aside>
+
+    </section>
+<div class="layout">
+    <header>
+
+        <div class="content">
+
+            <!-- HEADER SNIPPET START -->
+
+            <div align="left" id="Header">
+
+                <div class="header__left"><img src="http://storage.pardot.com/11012/137940/Achieve_logo.jpg" /></div>
+                <section class="header__right">
+
+                <!-- <p class="text-left"><a class="header-button" target="_blank" href="http://ww2.achieve3000.com/Hawaii2016Conference">2016 Hawaii Conference</a></p>-->
+
+
+                    <!--<button class="header__right__button burger-menu-wrapper">
+                        <div class="burger-menu__inner">
+                            <hr class="burger-menu__line top">
+                            <hr class="burger-menu__line middle">
+                            <hr class="burger-menu__line bottom">
+                        </div>
+
+                    </button>-->
+
+                </section>
+
+
+            </div>
+
+            <!-- HEADER SNIPPET END -->
+
+        </div>
+
+    </header>
+
+
+    <!-- DARK BAR ONE -->
+    <section class="small_bar_one">
+
+        <div class="content">
+
+            <p class="site-slogan">Differentiated Instruction. Accelerated Learning.</p>
+
+        </div>
+
+    </section>
+    <!-- DARK BAR END -->
+
+
+
+	<!-- HERO IMAGE START -->
+
+  <section class="hero" style="background:url('http://ww2.achieve3000.com/l/11012/2015-02-03/2w45ht/11012/128372/fotf_micro_hero.jpg'); background-size:cover; background-repeat:no-repeat; margin-bottom:0px; padding-bottom:0px; margin-top:0px; padding-top:0px;">
+
+        <div class="content" style="margin-bottom:-5px; padding-bottom:-5px; ">
+
+                <section class="hero__left-content">
+
+                  <h2 class="hero__header" style="padding-top:0px;">Achieve Hawaii</h2>
+
+                  <p class="hero__subheader">The ONLY patented literacy solution delivering truly differentiated instruction and accelerating learning for all students &#8211; customized just for Hawaii!</p>
+
+                  <p class="hero__description">Ensure maximum SBA success with new products that support literacy for all students, PreK-12, as well as your RtI and ELL classrooms, all at exclusive Hawaii-only pricing.</p>
+
+                    <div class="hero__left-content-inner">
+                    <!--<p class="text-left"><a class="hero-button" href="#sba">Proven SBA Success!</a></p>-->
+                        <p class="text-left"><a class="hero-button" href="#pd-offer">View Exclusive Hawaii Pricing</a></p>
+                    </div>
+
+                </section><section class="hero__right-content" style=" align-content:center; margin-bottom:0px; padding-bottom:0px; margin-top:0px; padding-top:0px;"><img src="http://ww2.achieve3000.com/l/11012/2016-03-07/4t93v8/11012/149681/Hawaii_Lexile_Study_2014_15_LexileGrowthChart_3.png" alt="" style="margin-bottom:0px; margin-right:0px; padding-bottom:0px; width:300px; height:auto;" class="right">
+                </section></div>
+
+  </section>
+
+	<!-- HERO IMAGE END -->
+
+    <!-- DARK BAR TWO -->
+
+    <section class="small_bar_two" id="sticker" style="z-index:5 !important; width:100%; margin-top:-40px; background-color:#303030;">
+
+        <div class="content">
+
+            <aside class="header__icons">
+                <div class="icon" style="text-align:center"><a href="#sba" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6b/11012/147751/Check_Circle_Icon_100x100.png" style="border:0" alt=""/><br>
+              SBA Success</a></div>
+               <div class="icon" style="text-align:center"><a href="#pro" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-03-08/4tbvn6/11012/149711/icon_literacyInTheContentArea_white_100x100.png" style="border:0" alt=""/><br>Content Area Literacy</a></div>
+                <div class="icon" style="text-align:center"><a href="#sa" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6d/11012/147753/icon_FoundationalLiteracy_white_100x100.png" style="border:0" alt=""/><br>Early Literacy</a></div>
+                  <div class="icon" style="text-align:center"><a href="#boost" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6j/11012/147755/Icon_Intervention_White_100x100.png" style="border:0" alt=""/><br>Intervention</a></div>
+                  <div class="icon" style="text-align:center"><a href="#access" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc68/11012/147749/icon_ell_white_100x100.png" style="border:0" alt=""/><br>ELL</a></div>
+                <div class="icon" style="text-align:center"><a href="#espanol" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6l/11012/147759/Icon_Spanish_White_100x100.png" style="border:0" alt=""/><br>Espa&ntilde;ol</a></div>
+                <div class="icon" style="text-align:center"><a href="#LE" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6n/11012/147761/Online_Statistics_icon_100x100.png" style="border:0" alt=""/><br>Leadership Edition</a></div>
+                <div class="icon" style="text-align:center"><a href="#247" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6g/11012/147757/Laptop_with_WIFi_Icon_100x100.png" style="border:0" alt=""/><br>Extended Use</a></div>
+                <div class="icon" style="text-align:center"><a href="#pd-offer" style="color:#ffffff"><img src="http://ww2.achieve3000.com/l/11012/2016-01-22/4myc6q/11012/147763/Transaction_Icon_100x100.png" style="border:0" alt=""/><br>Exclusive Pricing</a></div>
+
+            </aside>
+
+        </div>
+
+    </section>
+    <!-- DARK BAR END -->
+
+ <!-- DARK BAR TWO -->
+
+    <!--<section class="small_bar_two" style="background-color:#303030">
+
+            <div class="content">
+
+                <aside class="header__icons" style=" margin-left:5%; text-align:left">
+
+                    <div class="icon"><h2 style=" color:#e6e6e6; font-size:22px; font-weight:600">PreK-1 Literacy</h2></div>
+
+                    <div class="icon"><a href="#smartyants"><img src="http://ww2.achieve3000.com/l/11012/2016-01-05/4l45nb/11012/146847/SA_marketingLogo2015_grey_107x44px.png" pardot-region="iconbar_image_2"/></a></div>
+
+
+                </aside>
+
+            </div>
+
+    </section>-->
+
+    <!-- DARK BAR END -->
+
+     <!-- DARK BAR TWO -->
+
+   <!-- <section class="small_bar_two" style="background-color:#363636">
+
+            <div class="content">
+
+                <aside class="header__icons" style=" margin-left:5%; text-align:left">
+
+                    <div class="icon"><h2 style=" color:#e6e6e6; font-size:22px; font-weight:600">Response to Intervention</h2></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t56/11012/147461/Logo_KidBiz_Boost_TM_Grey.png" pardot-region="iconbar2_image_2"/></a></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t4s/11012/147453/Logo_TeenBiz_Boost_TM_Grey.png" pardot-region="iconbar2_image_3"/></a></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t4l/11012/147441/Logo_Empower_Boost_TM_Grey.png" pardot-region="iconbar2_image_4"/></a></div>
+
+
+                </aside>
+
+            </div>
+
+    </section>-->
+
+    <!-- DARK BAR END -->
+
+     <!-- DARK BAR TWO -->
+
+   <!-- <section class="small_bar_two" style="background-color:#404040">
+
+            <div class="content">
+
+                <aside class="header__icons" style=" margin-left:5%; text-align:left">
+
+                    <div class="icon"><h2 style=" color:#e6e6e6; font-size:22px; font-weight:600">English Language Learners</h2></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t52/11012/147457/Logo_KidBiz_Access_TM_Grey.png" pardot-region="iconbar3_image_2"/></a></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t4x/11012/147451/Logo_TeenBiz_Access_TM_Grey.png" pardot-region="iconbar3_image_3"/></a></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t4j/11012/147445/Logo_Empower_Access_TM_Grey.png" pardot-region="iconbar3_image_4"/></a></div>
+
+
+                </aside>
+
+            </div>
+
+    </section>-->
+
+    <!-- DARK BAR END -->
+     <!-- DARK BAR TWO -->
+
+   <!-- <section class="small_bar_two" style="background-color:#464646">
+
+            <div class="content">
+
+                <aside class="header__icons" style=" margin-left:5%; text-align:left">
+
+                    <div class="icon"><h2 style=" color:#e6e6e6; font-size:22px; font-weight:600">Spanish Literacy</h2></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t54/11012/147459/Logo_KidBiz_Espanol_TM_Grey.png" pardot-region="iconbar4_image_2"/></a></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t4v/11012/147449/Logo_TeenBiz_Espanol_TM_Grey.png" pardot-region="iconbar4_image_3"/></a></div>
+
+                    <div class="icon"><a href="#bae"><img src="http://ww2.achieve3000.com/l/11012/2016-01-18/4m4t4n/11012/147443/Logo_Empower_Espanol_TM_Grey.png" pardot-region="iconbar4_image_4"/></a></div>
+
+
+                </aside>
+
+            </div>
+
+    </section>-->
+
+    <!-- DARK BAR END -->
+
+	<!-- CUSTOM SECTIONS HERE -->
+    <!--- FIRST CONTENT SECTION START -->
+        <section class="content-section grey"  id="whatsnew">
+
+	        <div class="content clearfix">
+
+                    <div class="two-column two-thirds left">
+
+                        <h2 style="font-size:22px; font-weight:600">Achieve Hawaii for SBA Success</h2>
+
+                        <div><p>Achieve3000<sup>&reg;</sup> offers the <em>only</em> cloud-based solutions that deliver daily differentiated nonfiction reading and writing instruction based on each student's individual Lexile<sup>&reg;</sup> reading level. Featuring a custom curriculum aligned with Hawaii standards, Achieve Hawaii ensures all learners receive the targeted instruction and daily practice they need for SBA success! Includes:</p>
+<ul><li>LevelSet<sup>&#8482;</sup> assessment: Initial assessment and ongoing progress monitoring </li>
+<li>Alignment to McGraw-Hill Reading Wonders<sup>&reg;</sup> (grades 2-5) and the College Board's SpringBoard<sup>&reg;</sup> (grades 6-12) </li><li>Built-in Workforce Readiness curriculum </li>
+<li>Leadership Edition: Data dashboard helps administrators monitor the success of their implementation</li>
+<li>Home Edition: Parents and guardians enjoy resources in 19 languages, including Hawaiian </li>
+<li>Anywhere, anytime, any-device access: Available 24/7 for students, teachers, and administrators &#8211; including offline access! </li>
+<li><strong>Coming in 2016</strong>! All-new Hawaii SBA ELA practice courses with new technology-enhanced items &#8211; included at each grade level at no additional cost!</li></ul>
+<p>Achieve Hawaii is available with <em>Pro</em>, the literacy solution for your mixed-ability English language arts, science, and social studies classrooms; <em>Boost</em>, an intensive Response to Intervention solution; <em>Access</em>, a targeted English language learner solution; and <em>Espa&ntilde;ol</em>, a flexible Spanish literacy solution for beginners and native speakers alike. Keep reading to learn about these exciting new solutions, and how you can see exceptional scores on SBA!</p>
+</div>
+
+                    </div>
+
+                    <div class="two-column one-third right custom_form secondcolumn header-form">
+
+                                  <div class="form-header">
+                        <p class="h2 secondcolumn-title">Request a custom Quote</p>
+
+
+<p class="downloadp">Complete this form to get exclusive pricing and more information.</p>
+                    </div><!-- /.form-header -->
+
+
+                    <div class="form-bg">%%content%%</div>
+
+                                   </div>
+
+                    </div>
+	    </section>
+<!-- FIRST MODULE CONTENT BLOCK END -->
+
+
+
+
+        <!-- SECTION 2 -->
+     <section class="content-section white" id="sba">
+
+	        <div class="content clearfix">
+
+
+                     <div class="two-column two-thirds right width44">
+
+                        <h2 style="font-size:22px; font-weight:600">Proven Success on SBA!</h2>
+
+                        <div><p>Achieve3000 is now proven to impact success on the SBA! A case in point is the Chula Vista Elementary School District in California, where the district used Achieve3000 and outperformed the state average by double digits &#8211; and also outperformed schools with similar demographics across the state.
+<br><br>
+Watch Dr. John Nelson, former assistant superintendent in Chula Vista, share how Achieve3000 prepared Chula Vista students for the rigor of the SBA.</p>
+<br>
+ <p><span style="font-size:20px">"There is no better evidence to me of the effectiveness of Achieve3000 than these stellar results."</span><br>
+ &#8212; John M. Nelson, former Assistant Superintendent <br>
+of Chula Vista Elementary School District
+</p>
+                      </div>
+
+                    </div>
+
+
+
+                    <div class="two-column one-third left width100 width45">
+
+                                <div>
+                                  <iframe src="https://player.vimeo.com/video/149186620?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ <br><br>
+ </div>
+                                      </div>
+
+                                       <!-- <div class="two-column two-thirds right width44">
+
+                 <img src="http://ww2.achieve3000.com/l/11012/2016-01-19/4mfzvq/11012/147523/CA_ChulaVista_SBAPassingPercent_Chart.png" alt="Above-average SBA scores for students using Achieve3000!" style="height:250px;"/>
+                     </div>
+
+
+                                      <div class="two-column one-third left width100 width45">
+                                      <p>
+<span style="font-size:20px">"There is no better evidence to me of the effectiveness of Achieve3000 than these stellar results."</span><br>
+ &#8212; John M. Nelson, former Assistant Superintendent <br>
+of Chula Vista Elementary School District
+</p></div>-->
+
+                     </div>
+             </section>
+             <!-- Section 2 end-->
+
+
+
+
+        <!-- SECTION 3 -->
+     <section class="content-section grey" id="pro">
+
+	        <div class="content clearfix">
+
+
+                    <div class="two-column two-thirds left width44">
+
+                        <h2 style="font-size:22px; font-weight:600"><em>Pro</em>: Reach All Learners Across the Curriculum</h2>
+
+                        <div><p>For Hawaii's <strong>English language arts, science, and social studies classes</strong> with a mix of student abilities or diverse student populations, <em><a target="_blank" href="http://www.achieve3000.com/learning-solutions/literacy-in-the-content-area/"><strong>Pro</strong></a></em> is the differentiated literacy solution that accelerates reading gains for all students &#8211; all in a single classroom. With robust supports for at-risk readers, linguistic scaffolds for English language learners, and additional challenges for <strong>talented and gifted students</strong>, <em>Pro</em> prepares all students for success in school and beyond!</p>
+<p><strong>Built for Hawaii</strong>: The Achieve3000 Pro Hawaii Edition features a custom strategic curriculum aligned to Hawaii's grade-level standards for language arts, science, and social studies. With targeted, daily SBA practice that includes technology-enhanced items in every lesson, the <em>Pro</em> Hawaii Edition ensures all Hawaii students are fully prepared for test day.
+</p>
+</div>
+
+                    </div>
+
+                    <div class="two-column one-third right width100 width45">
+
+                                <div>
+
+                                    <p><a target="_blank" href="http://www.achieve3000.com/learning-solutions/literacy-in-the-content-area/"><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2016-03-07/4t93z6/11012/149685/KB_TB_EM_Pro_greybackground.png" style="width: 300px; border-width: 0px; border-style: solid;" width="300" /></a></p>
+
+                                    </div>
+
+                                </div>
+
+	        </div>
+
+	    </section>
+        <!--SECTION 3 END -->
+
+
+        <!-- SECTION 4 -->
+     <section class="content-section white" id="sa">
+
+
+	        <div class="content clearfix">
+
+
+
+                     <div class="two-column two-thirds right width44">
+
+                        <h2 style="font-size:22px; font-weight:600">Smarty Ants: The Right Start for Young Learners</h2>
+
+                        <div><p>The path to college and career literacy begins with <a target="_blank" href="http://www.achieve3000.com/learning-solutions/foundational-literacy/">Smarty Ants</a><sup>&reg;</sup>, an effective, research-driven solution that differentiates instruction in foundational reading skills and accelerates student achievement &#8211; all in an engaging, interactive, online learning environment. With an adaptive content system that constantly measures student progress and tailors instruction accordingly, robust learning scaffolds embedded in every lesson, and dozens of engaging, educational games to play, Smarty Ants ensures all students stay motivated and moving forward on the road to reading success!</p><p><strong>Built for Hawai</strong>i: Smarty Ants is fully aligned with the Common Core State Standards, ensuring all Hawaii students master the essential phonemic awareness, phonics, fluency, vocabulary, and comprehension skills needed to become confident, capable readers ready to conquer complex, grade-level text.</p>
+</div>
+
+                    </div>
+
+                    <div class="two-column one-third left width100 width45">
+
+                                <div>
+                                      <p><a target="_blank" href="http://www.achieve3000.com/learning-solutions/foundational-literacy/"><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2016-01-05/4l45nn/11012/146849/SA_marketingLogo.png" style="width: 300px; border-width: 0px; border-style: solid;" width="300" /></a></p>
+
+                                     </div>
+
+                                      </div>
+
+                     </div>
+             </section>
+             <!-- Section 4 end-->
+
+                 <!-- SECTION 5 -->
+     <section class="content-section grey" id="boost">
+
+	        <div class="content clearfix">
+
+
+                    <div class="two-column two-thirds left width44">
+
+                        <h2 style="font-size:22px; font-weight:600"><em>Boost</em>: Targeted Intervention and Special Education</h2>
+
+                        <div><p>For targeted and intensive intervention, <em><a target="_blank" href="http://www.achieve3000.com/learning-solutions/intervention/"><strong>Boost</strong></a></em> provides the right combination of differentiated instruction, effective learning scaffolds, and instructional frameworks to accelerate reading gains in your <strong>Tier II and Tier III intervention and special education</strong> models. With robust supports built into every lesson, custom routines focused on developing academic and cross-disciplinary vocabulary, and additional courses in foundational reading skills such as phonics and fluency, <em>Boost</em> helps all below-level readers reach their full potential!</p>
+<p><strong>Built for Hawaii</strong>: The Achieve3000 <em>Boost</em> Hawaii Edition is the <u>only patented and proven</u> differentiated instruction solution that ensures intervention and special education students receive instruction aligned to Hawaii's grade-level standards, plus daily SBA practice with online activities and technology-enhanced items!
+</p>
+</div>
+
+                    </div>
+
+                    <div class="two-column one-third right width100 width45">
+
+                                <div>
+
+                                 <p><a target="_blank" href="http://www.achieve3000.com/learning-solutions/intervention/"><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2016-03-07/4t93zd/11012/149687/KB_TB_EM_Boost_GreyBackground.png" style="border-width: 0px; height:300px; width:300px; border-style: solid;" /></a></p>
+
+                                    </div>
+
+                                </div>
+
+	        </div>
+
+	    </section>
+        <!--SECTION 5 END -->
+
+          <!-- SECTION 6 -->
+     <section class="content-section white" id="access">
+
+     <div class="content clearfix">
+           <div class="two-column two-thirds right width44">
+
+                        <h2 style="font-size:22px; font-weight:600"><em>Access</em>: Accelerating English Language Acquisition</h2>
+
+                        <div><p>Whether in small pull-out groups or in specialized classrooms, <em><a target="_blank" href="http://www.achieve3000.com/learning-solutions/ell/"><strong>Access</strong></a></em> accelerates language and literacy gains for every <strong>English language learner</strong>, from beginner to advanced, and prepares them for success across the entire curriculum. A key feature is <em>Access</em>'s targeted student routine, which introduces and reinforces key learning strategies, develops academic vocabulary in both English and Spanish, builds oral fluency, and guides students as they review and edit their own writing.</p>
+
+<p><strong>Built for Hawaii</strong>: The Achieve3000 <em>Access</em> Hawaii Edition is the <u>only patented and proven</u> differentiated instruction solution that provides English language learners with equitable access to grade-level instruction aligned to Hawaii's grade-level standards, plus daily SBA practice &#8211; all with the linguistic supports they need to succeed!
+</p>
+</div>
+
+</div>
+
+                    <div class="two-column one-third left width100 width45">
+                     <div>
+                                  <p><a target="_blank" href="http://www.achieve3000.com/learning-solutions/ell/"><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2016-02-03/4ph78j/11012/148193/KB_TB_EM_Access.png" style="border-width: 0px; height:300px; width:300px;  border-style: solid;" /></a></p>
+ </div>
+ </div>
+
+                     </div>
+             </section>
+             <!-- Section 6 end-->
+
+              <!-- SECTION 7 -->
+     <section class="content-section grey" id="espanol">
+
+	        <div class="content clearfix">
+
+
+                    <div class="two-column two-thirds left width44">
+
+                        <h2 style="font-size:22px; font-weight:600"><em>Espa&ntilde;ol</em>: Building Literacy Skills in Spanish</h2>
+
+                        <div><p>For <strong>Spanish</strong> immersion, dual language, and bilingual classrooms, <a target="_blank" href="http://www.achieve3000.com/learning-solutions/spanish/"><strong><em>Espa&ntilde;ol</em></strong></a> ensures all learners can improve their Spanish-language proficiency while simultaneously building transferrable literacy skills, content-area knowledge and academic vocabulary. Designed for Spanish-speaking students of every ability level, from beginner to native speaker, <em>Espa&ntilde;ol</em> provides the robust learning scaffolds, targeted instruction, and tailored student routine that empower every learner to <em>&iexcl;tener &eacute;xito</em>!</p>
+<p><strong>Built for Hawaii</strong>: The Achieve3000 <em>Espa&ntilde;ol</em> Hawaii Edition is the <u>only patented and proven</u> differentiated instruction solution that provides a full strategic custom strategic curriculum aligned to Hawaii's grade-level standards, plus daily practice for the SBA with technology-enhanced items and online activities &#8211; all in Spanish!
+</p>
+</div>
+
+                    </div>
+
+                    <div class="two-column one-third right width100 width45">
+
+                                <div>
+
+                                 <p><a target="_blank" href="http://www.achieve3000.com/learning-solutions/spanish/"><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2016-03-07/4t93zg/11012/149689/KB_TB_EM_Espanol_greybackground.png" style="border-width: 0px; height:300px; width:300px;  border-style: solid;" /></a></p>
+
+                                    </div>
+
+                                </div>
+
+	        </div>
+
+	    </section>
+        <!--SECTION 7 END -->
+
+         <!-- SECTION 8 -->
+     <section class="content-section white" id="LE">
+
+
+	        <div class="content clearfix">
+
+           <div class="two-column two-thirds right width44">
+
+                <h2 style="font-size:22px; font-weight:600">Achieve3000's New Leadership Edition</h2>
+
+                        <div><p>Your new, cloud-based dashboard allows you to easily monitor the health of your Achieve3000 implementation. Enjoy:</p>
+
+<ul>
+	<li>Anytime, anywhere access featuring at-a-glance overview of 21 key implementation indicators, each with clear action steps</li>
+	<li>Quick and easy paths for analyzing the data and communicating program effectiveness</li>
+</ul>
+</div>
+
+                    </div>
+
+                     <div class="two-column one-third right width100 width45">
+                     <div>
+                                <p><a class="lightbox_trigger" href="http://ww2.achieve3000.com/l/11012/2015-09-11/4421z1/11012/140862/leadership_edition_dashboard_1571px.jpg"><img alt="" border="1" src="http://ww2.achieve3000.com/l/11012/2015-09-11/4421z1/11012/140862/leadership_edition_dashboard_1571px.jpg" style="border-width: 1px; border-style: solid;" /></a></p>
+                                </div>
+                                 </div>
+
+                     </div>
+             </section>
+             <!-- Section 8 end-->
+
+        <!--Section 9 -->
+         <section class="content-section grey" id="247">
+
+	        <div class="content clearfix">
+
+
+                    <div class="two-column two-thirds left width44">
+
+                             <h2 style="font-size:22px; font-weight:600">Extended Use: 24/7 Access</h2>
+
+                        <div><p>We&#39;ve added more ways to ensure that students can access Achieve3000 anytime and anywhere:</p>
+
+<ul>
+	<li>Unlimited mobile access with new iPad<sup>&reg;</sup> and Chrome<sup>&trade;</sup> apps, with or without an Internet connection</li>
+	<li>AchieveSummer provides engaging lessons that develop key reading skills and strategies &ndash; and prevent summer learning loss</li>
+	<li>Home Edition, included free for every family, strengthens the home/school connection and provides supports in 19 languages, including Hawaiian</li>
+</ul>
+</div>
+
+ </div>
+
+                    <div class="two-column one-third right width100 width45">
+                       <div>
+                                  <p><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2015-01-15/2w1mry/11012/127380/bc17_mobile_hero_image.png" style="border-width: 0px; border-style: solid;" /></p> </div>
+                                 </div>
+
+	        </div>
+
+	    </section>
+        <!-- Section 9 end -->
+
+
+         <!-- SECTION 10 -->
+     <section class="content-section white">
+
+
+             <div id="pd-offer" style=" margin-top:-60px; margin-bottom:0px; width:100%; height:30px; background-color:#d84e41; float:right">
+
+             </div>
+
+	        <div class="content clearfix">
+           <!-- <div style="align-content:right; text-align:right; margin:0px; margin-top:-30px; margin-bottom:50px; width:100%"><p><a href="#Header">Back to What's New for Achieve Hawaii</a></p></div>-->
+
+	                <h2 style="font-size:22px; align-content:center; font-weight:600">Exclusive Hawaii-Only Pricing for Back to School 2016!</h2>
+
+                    <div style="margin-bottom:30px;"><p>Enjoy exclusive Hawaii-only pricing available now for all Achieve Hawaii products and for your professional learning service options.</p>
+</div>
+
+</div>
+<div class="content clearfix" style="border-bottom:4px solid #eeeeee; border-top:4px solid #eeeeee; padding-top:20px; padding-bottom:20px">
+                     <div class="two-column two-thirds right width44">
+
+               <div style="margin-top:0px;">
+
+<ul>
+	<li>$22.10 price per student</li>
+	<li>LOW professional development costs</li>
+	<li>SPECIAL 3-semester price</li>
+	<li>NEW Principal Power Package</li>
+	<li>AMAZING rate for the new Boost, Access and Espa&ntilde;ol solutions!</li>
+</ul>
+</div>
+
+              </div>
+
+                    <div class="two-column one-third left width100 width45">
+
+                                <div style=" padding:35px; padding-top:20px">
+                                   <h2 style="font-size:22px; font-weight:600">Exclusive Hawaii Pricing</h2>
+<div style="width:100%; height:15px; border-bottom:2px solid #d84e41; margin-bottom:15px"></div>
+<div>
+<p>Download this flyer to see exclusive Hawaii pricing, and then contact us for a custom quote.</p>
+
+<table border="0" width="200" cellpadding="0" cellspacing="0" class="button_color" bgcolor="48a0dc" style="background-color: rgb(218, 77, 61);">
+<tbody><tr><td height="8" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+	<tr>									                				<td align="center" style="color: #ffffff; font-size: 13px; font-family: arial, sans-serif; line-height: 23px;">
+										                					<!-- ======= main section button ======= -->
+<div class="editable_text" style="line-height: 23px;">
+											                    				<span class="text_container"><a href="http://doc.achieve3000.com/marketing/Achieve3000_HAWAII_Pricing_Flyer_March2016.pdf" target="_blank" style="color: #ffffff; text-decoration: none;">Hawaii Pricing Flyer</a>										                    				</span>
+											                    			</div>
+		</td></tr>
+																	<tr><td height="8" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+
+</tbody></table>
+
+</div>
+
+                                     </div>
+
+                                      </div>
+
+
+                     </div>
+
+             </section>
+             <!-- Section 10 end-->
+
+                <!-- SECTION 11 -->
+     <section class="content-section white" style="padding-top:0px;">
+
+	        <div class="content clearfix">
+
+                     <div class="two-column two-thirds right width44">
+                        <h2 style="font-size:22px; font-weight:600">New Professional Learning Sessions, at Exclusive Hawaii-Only Pricing</h2>
+
+                        <div><!--<p>With powerful and deep professional learning sessions, you&#39;ll ensure that every day with Achieve3000 builds even greater growth. Some top picks for Hawaii:</p>--><br>
+
+
+<div style="margin-bottom:30px;">
+<div style="border-bottom:1px solid #d84e41; width:100%"><strong style="color:#d84e41; line-height:28px">Principal Power Package NEW</strong></div>
+
+<p>Includes onsite or online sessions with Achieve3000's Hawaii Implementation Manager for program awareness, progress monitoring, reviewing the Leadership Edition data dashboard, a virtual consultation with a member of the Educational Leadership Cabinet, and membership to Achieve3000's Hawaii Principal Institute Series.</p>
+</div>
+
+<div style="margin-bottom:30px;">
+<div style="border-bottom:1px solid #d84e41; width:100%"><strong style="color:#d84e41; line-height:28px">Leadership Institute for Accelerated Learning NEW</strong></div>
+
+<p>A sustained leadership development model that includes:</p>
+<ul><li>A day-long workshop with:<ul><li>
+Kevin Baird, Chairman of the Center for College and Career Readiness, and</li>
+<li>Dr. John M. Nelson, architect of the instructional model that helped one of California's largest school districts achieve some of the state's top SBA scores</li></ul></li>
+<li>Six follow-up meetings, on-site or online, to ensure implementation success.</li></ul>
+
+<p>This workshop is based on the Aspen Institute framework and tailored just for Hawaii Principals and School Leaders.</p>
+
+</div>
+
+<div style="margin-bottom:30px;">
+<div style="border-bottom:1px solid #d84e41; width:100%"><strong style="color:#d84e41; line-height:28px">Professional Learning Services</strong></div>
+
+<p>Includes on-site professional development workshops, implementation planning, principal awareness sessions, and access to 24/7 self-paced, on-demand resources. Top picks for Hawaii include:</p>
+<ul><li>Using the Achieve3000 Hawaii Edition to Focus Instructional Improvement for SBA Success</li>
+<li>Disciplinary Literacy: Developing Literacy in Science and Social Studies</li>
+<li>Workforce Readiness: Preparing Students for Success</li>
+<li>Reading Wonders or SpringBoard and Achieve3000 in Action</li>
+<li>Accelerate Gains by Using Achieve3000 Data to Drive Schoolwide Improvement</li></ul>
+
+</div>
+
+<!--<div style="margin-bottom:30px;">
+<div style="border-bottom:1px solid #d84e41; width:100%"><strong style="color:#d84e41; line-height:28px">Workshops for Parents</strong></div>
+
+<ul>
+	<li><strong>How Can I Prepare My Child for College and Career Success?</strong></li>
+</ul>
+</div>-->
+</div>
+
+<!--<div style="align-content:right; text-align:right; margin:0px; margin-top:20px;  width:100%"><p><a href="#Header">Back to Top</a></p></div>     -->
+              </div>
+
+                    <div class="two-column one-third left width100 width45">
+                                <div>
+                                   <p><a href="http://doc.achieve3000.com/marketing/PLS_Catalog/PLS_Catalog.pdf" target="_blank"><img alt="" border="0" src="http://ww2.achieve3000.com/l/11012/2015-09-11/44221t/11012/140888/PLS_Catalog_2015_2016.jpg" style="width: 350px; border-width: 0px; border-style: solid;" width="350" /></a></p>
+</div>
+
+
+<table border="0" width="200" cellpadding="0" cellspacing="0" class="button_color" bgcolor="48a0dc" style="background-color: rgb(218, 77, 61);">
+
+																	<tbody><tr><td height="8" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+
+																	<tr>
+										                				<td align="center" style="color: #ffffff; font-size: 13px; font-family: arial, sans-serif; line-height: 23px;">
+										                					<!-- ======= main section button ======= -->
+
+											                    			<div class="editable_text" style="line-height: 23px;">
+											                    				<span class="text_container">
+												                    			<a href="http://doc.achieve3000.com/marketing/PLS_Catalog/PLS_Catalog.pdf" target="_blank" style="color: #ffffff; text-decoration: none;">See full course options</a>
+											                    				</span>
+											                    			</div>
+											                    		</td>
+											                    	</tr>
+
+																	<tr><td height="8" style="font-size: 8px; line-height: 8px;">&nbsp;</td></tr>
+
+</tbody></table>
+                                   </div>
+
+
+
+
+
+
+	        </div>
+	    </section>
+        <!--SECTION 11 END -->
+
+    <!-- FORM -->
+<section class="content-section content-tag" id="form"><a name="contact-us"></a>
+
+        <div class="content">
+
+	        <h2 class="form-title"></h2>
+
+	 	    <div class="form-description"></div>
+
+	 	    <iframe class="register" id="form-register" src="http://ww2.achieve3000.com/l/11012/2015-04-20/3dxjp9" width="100%" height="100%" type="text/html" frameborder="0" allowTransparency="true" style="border: 0" scrolling="no" seamless overflow-x="hidden" onload="resizeIframe(this)"></iframe>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-master input, .form-field-master select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script></div>
+
+    </section>
+
+
+    <!-- Implementation Team Section Start -->
+      <div id="FooterGray">
+
+        <div class="content">
+
+            <div class="footer__top-content">
+            <div style="padding-bottom:20px;"><p></p></div>
+
+             <div class="footer__corporate-headquarters" style="padding-bottom:20px; height:140px; ">
+             <div style="float:left; height:100px; margin-right:10px;"><img src="http://ww2.achieve3000.com/l/11012/2015-09-22/44vrc5/11012/141372/ChristineHiggns.png" width="67" style="width:67px" alt="Christine Higgins"/></div>
+                    <div class="contact-us-header footer__header" >
+                        Christine Higgins
+                    </div>
+                    <ul>
+                        <li>
+                        Hawaii State Director of Sales<br>
+                        808-442-2248<br>
+<a href="mailto:christine.higgins@achieve3000.com">christine.higgins@achieve3000.com</a>
+
+                        </li>
+                    </ul>
+                    </div>
+
+               <!--  <div class="footer__corporate-headquarters" style="padding-bottom:20px; height:140px; ">
+             <div style="float:left; height:100px; margin-right:10px;"><img src="http://ww2.achieve3000.com/l/11012/2015-09-22/44vrc7/11012/141374/DarrelGalera.png" style="width:67px" alt="Darrel Galera"/></div>
+                    <div class="contact-us-header footer__header">
+                        Darrel Galera
+                    </div>
+                    <ul>
+                        <li>
+                        Hawaii State Director of Implementation<br>
+                        808-778-6378<br>
+<a href="mailto:darrel.galera@achieve3000.com">darrel.galera@achieve3000.com</a>
+
+                        </li>
+                    </ul>
+                    </div>-->
+
+                    <div class="footer__corporate-headquarters" style="padding-bottom:20px; height:140px;">
+             <div style="float:left; height:100px; margin-right:10px;"><img src="http://ww2.achieve3000.com/l/11012/2015-09-22/44vrc9/11012/141376/DrSaraBhonsale.png" style="width:67px" alt="Dr. Sara Bhonsale"/></div>
+                    <div class="contact-us-header footer__header">
+                        Dr. Sara Bhonsale
+                    </div>
+                    <ul>
+                        <li>
+                        Curriculum and Implementation Manager<br>
+                        808-344-4322<br>
+<a href="mailto:sara.oberbeck@achieve3000.com">sara.oberbeck@achieve3000.com</a>
+
+                        </li>
+                    </ul>
+                    </div>
+
+
+
+                    <div class="footer__corporate-headquarters" style="padding-bottom:20px; height:140px; ">
+             <div style="float:left; height:120px; margin-right:10px;"><img src="http://ww2.achieve3000.com/l/11012/2015-09-22/44vrby/11012/141368/AllisonZimpfer.png" style="width:67px" alt="Allison Zimpfer"/></div>
+                    <div class="contact-us-header footer__header">
+                        Allison Zimpfer
+                    </div>
+                    <ul>
+                        <li>
+                        Curriculum and Implementation Manager<br>
+                        808-282-2629<br>
+<a href="mailto:allison.zimpfer@achieve3000.com">allison.zimpfer@achieve3000.com</a>
+
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="footer__corporate-headquarters" style="padding-bottom:20px; height:140px; ">
+             <div style="float:left; height:100px; margin-right:10px;"><img src="http://ww2.achieve3000.com/l/11012/2015-09-22/44vrc1/11012/141366/AkemiHayashi.png" style="width:67px" alt="Akemi Hayashi"/></div>
+                    <div class="contact-us-header footer__header">
+                        Akemi Hayashi
+                    </div>
+                    <ul>
+                        <li>
+                        Regional Implementation Specialist<br>
+                        818-355-9637<br>
+<a href="mailto:akemi.hayashi@achieve3000.com">akemi.hayashi@achieve3000.com</a>
+
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="footer__corporate-headquarters" style="padding-bottom:20px; height:140px; ">
+             <div style="float:left; height:100px; margin-right:10px;"><img src="http://ww2.achieve3000.com/l/11012/2015-09-22/44vrc3/11012/141370/BrandiWakabayashi.png" style="width:67px" width="67" alt="Brandi Wakabayashi"/></div>
+                    <div class="contact-us-header footer__header">
+                        Brandi Wakabayashi
+                    </div>
+                    <ul>
+                        <li>
+                       Implementation Coordinator<br>
+                       888-968-6822 ext.605<br>
+<a href="mailto:brandi.wakabayashi@achieve3000.com">brandi.wakabayashi@achieve3000.com</a>
+
+                        </li>
+                    </ul>
+                    </div>
+
+
+               </div>
+
+               <div class="footer__bottom-content" style="height:0px; padding:0px">
+
+
+                <nav class="footer-navigation">
+
+                    <div class="footer-navigation__element">
+                    </div>
+                    <div class="footer-navigation__element">
+                    </div>
+
+                </nav>
+
+                <div class="footer-copyright">
+                    <p></p>
+                </div>
+
+
+            </div>
+         </div>
+
+  </div>
+    <!-- Implementation Team Section End -->
+
+
+
+    <!-- FOOTER START -->
+
+    <div id="Footer">
+
+        <div class="content">
+
+            <div class="footer__top-content">
+
+             <div class="footer__corporate-headquarters">
+                    <div class="contact-us-header footer__header">
+                        Corporate Headquarters
+                    </div>
+                    <ul>
+                        <li>
+                        1985 Cedar Bridge Ave, Suite 3<br>
+Lakewood, NJ 08701
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="footer__contact-us">
+
+                    <div class="contact-us-header footer__header">
+                        <!--Contact us-->
+                    </div>
+
+                    <table>
+                        <tr>
+                            <!--<td class="contact-label">Toll-Free:</td>
+                            <td class="contact-information">888-968-6822</td>-->
+                        </tr>
+                        <tr>
+                            <!--<td class="contact-label">Phone:</td>
+                            <td class="contact-information">732-367-5505</td>-->
+                        </tr>
+                        <tr>
+                            <!--<td class="contact-label">Email:</td>
+                            <td class="contact-information">office@achieve3000.com
+</td>-->
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <div class="footer__social-media-links">
+
+                    <div class="social_media_image"><a href="https://www.facebook.com/pages/Achieve3000/333675157246" target="_blank"><img src="http://storage.pardot.com/11012/126376/BC17_facebook.png" height="50" width="50" style="border:0" alt=""/></a></div>
+
+                    <div class="social_media_image"><a href="https://www.linkedin.com/company/achieve3000" target="_blank"><img src="http://storage.pardot.com/11012/126378/BC17_linkedin.png" height="50" width="50" style="border:0" alt=""/></a></div>
+
+                    <div class="social_media_image"><a href="https://twitter.com/achieve3000" target="_blank"><img src="http://storage.pardot.com/11012/126380/BC17_twitter.png" height="50" width="50" style="border:0" alt=""/></a></div>
+
+                </div>
+
+            </div>
+            <a href="" class="go-top"><p><span>Back To Top</span></p></a>
+            <div class="footer__bottom-content">
+
+
+
+                <nav class="footer-navigation">
+
+                    <div class="footer-navigation__element">
+
+                        <a>Index</a>
+
+                    </div>
+
+                    <span class="footer-navigation__pipe"> | </span>
+
+                    <div class="footer-navigation__element">
+
+                        <a href="http://www.achieve3000.com">Visit our Website</a>
+
+                    </div>
+
+                </nav>
+
+                <div class="footer-copyright">
+                    <p></p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+  </div>
+
+</div>
+
+    <!-- FOOTER END -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+   <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('.register').contents().find('form').addClass('myforms');
+            var fieldName;
+            var input;
+            var placeholder;
+            var select;
+            var fieldType;
+
+            var mobileMenu = {
+
+                container: $('.layout'),
+
+                content: $('.header__menu'),
+
+                show: function(){
+
+                    this.container.animate({right: "260px"},300);
+
+                },
+
+                hide: function(){
+
+                    this.container.animate({right: "0"},300);
+
+                }
+
+            };
+            /*SCROOL TOP*/
+                        jQuery('.go-top').click(function(event) {
+                        		 event.preventDefault();
+                        		 jQuery('html, body').animate({scrollTop: 0}, 300);
+                        	});
+                        jQuery(window).scroll(function() {
+                        		 if (jQuery(this).scrollTop() > 200) {
+                        			  jQuery('.go-top').fadeIn(200);
+                        		 } else {
+                        			  jQuery('.go-top').fadeOut(200);
+                        		 }
+                        });
+            // remove first option in state select since it's empty
+            // which is causing problems in Firefox
+            $('#11012_232146pi_11012_232146 option:first').remove();
+
+            $('.field-label').each(function(){
+
+                fieldName = $(this).attr('for');
+
+                placeholder = $(this).html();
+
+                input = $('.form-field input[name="'+ fieldName +'"]');
+
+                input.attr('placeholder', placeholder);
+
+                textarea = $('.form-field textarea[name="'+ fieldName +'"]');
+
+                textarea.attr('placeholder', placeholder);
+
+            });
+
+            function iterateOptions(placeholder)
+            {
+                var option;
+                var optionLabel;
+                var value;
+
+                $('.select option').each(function(){
+
+                    option = $(this);
+
+                    optionLabel = $(this).context.label;
+
+                    if ( optionLabel == placeholder )
+                    {
+
+                        value = option.context.value;
+
+                        $('.select').val(value);
+
+                    }
+
+                });
+
+            }
+
+            $('span.right').click(function(e){
+               e.preventDefault();
+               mobileMenu.hide();
+               $('.burger-menu-wrapper').removeClass("as_x");
+            });
+
+            $('.burger-menu-wrapper').click(function(event){
+
+               event.preventDefault();
+
+               if($(this).hasClass("as_x"))
+               {
+
+                   mobileMenu.hide();
+
+                   return $(this).removeClass("as_x");
+
+               }
+
+               mobileMenu.show();
+
+               return $(this).addClass("as_x");
+            });
+
+            //lightbox
+            $('.lightbox_trigger').on('click',function(e) {
+		        //prevent default action (hyperlink)
+		        e.preventDefault();
+
+		        //Get clicked link href
+                var image_href = $(this).attr("href");
+                if(typeof image_href === 'undefined'){
+                    return;
+                }
+                /*
+                If the lightbox window HTML already exists in document,
+                change the img src to to match the href of whatever link was clicked
+                If the lightbox window HTML doesn't exists, create it and insert it.
+                (This will only happen the first time around)
+                 */
+                if ($('#lightbox').length > 0) { // #lightbox exists
+                    //place href as img src value
+                    $('#content').html('<img src="' + image_href + '" />');
+
+                    //show lightbox window - you could use .show('fast') for a transition
+                    $('#lightbox').fadeIn("slow");
+                }
+                else { //#lightbox does not exist - create and insert (runs 1st time only)
+                    //create HTML markup for lightbox window
+                    var lightbox =
+                    '<div id="lightbox" style="display:none;">' +
+                        '<div id="content">' + //insert clicked link's href into img src
+                            '<img src="' + image_href +'" />' +
+                        '</div>' +
+                    '</div>';
+                    //insert lightbox HTML into page
+                    $('body').append(lightbox);
+                    $('#lightbox').fadeIn("slow");
+                }
+
+	        });
+
+	        $('body').on('click', '#lightbox', function(){
+                $('#lightbox').hide();
+            });
+
+            // if there is only one form field make it 100% wide
+            // hide the form section if no form fields exist
+            var formFields = $('p.form-field').length;
+            if( formFields === 1) {
+                $('p.form-field').css("width","100%");
+            } else if(formFields === 0) {
+                //var button = '<p style="color:#FFFFFF;">If you have any questions, please contact: <a href="mailto:founders@achieve3000.com" style="color:#7cd4f9;">Founders@Achieve3000.com</a>.</p>';
+                //$('div.form-description').html('<p style="color:#FFFFFF; margin:15px;"> </p>')
+                //$('div.form-description').append(button);
+            }
+
+
+            // move error messages inside previous p.form-field
+            $('p.error-message').each(function(e){
+                $(this).prependTo($(this).prev('p.form-field'));
+            });
+
+            // close menu if contact us button is clicked
+            // smooth scroll to form
+            $('.contact-us').click(function(){
+                mobileMenu.hide();
+                $('.burger-menu-wrapper').removeClass("as_x");
+                $('html, body').animate({
+                    scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+                }, 700);
+                return false;
+            });
+
+            $('input, textarea').placeholder();
+
+
+        }); // end ready
+        var lightboxOnResize = function lightboxOnResize() {
+    if ($(window).width() < 499) {
+        $('a.lightbox_trigger')
+            .removeClass('lightbox_trigger')
+            .removeAttr('href');
+    }
+}
+
+$(document).ready(lightboxOnResize);
+$(window).resize(lightboxOnResize);
+
+    </script>
+
+    <script>
+/*! http://mths.be/placeholder v2.0.8 by @mathias */
+;(function(window, document, $) {
+
+	var isOperaMini = Object.prototype.toString.call(window.operamini) == '[object OperaMini]';
+	var isInputSupported = 'placeholder' in document.createElement('input') && !isOperaMini;
+	var isTextareaSupported = 'placeholder' in document.createElement('textarea') && !isOperaMini;
+	var prototype = $.fn;
+	var valHooks = $.valHooks;
+	var propHooks = $.propHooks;
+	var hooks;
+	var placeholder;
+
+	if (isInputSupported && isTextareaSupported) {
+
+		placeholder = prototype.placeholder = function() {
+			return this;
+		};
+
+		placeholder.input = placeholder.textarea = true;
+
+	} else {
+
+		placeholder = prototype.placeholder = function() {
+			var $this = this;
+			$this
+				.filter((isInputSupported ? 'textarea' : ':input') + '[placeholder]')
+				.not('.placeholder')
+				.bind({
+					'focus.placeholder': clearPlaceholder,
+					'blur.placeholder': setPlaceholder
+				})
+				.data('placeholder-enabled', true)
+				.trigger('blur.placeholder');
+			return $this;
+		};
+
+		placeholder.input = isInputSupported;
+		placeholder.textarea = isTextareaSupported;
+
+		hooks = {
+			'get': function(element) {
+				var $element = $(element);
+
+				var $passwordInput = $element.data('placeholder-password');
+				if ($passwordInput) {
+					return $passwordInput[0].value;
+				}
+
+				return $element.data('placeholder-enabled') && $element.hasClass('placeholder') ? '' : element.value;
+			},
+			'set': function(element, value) {
+				var $element = $(element);
+
+				var $passwordInput = $element.data('placeholder-password');
+				if ($passwordInput) {
+					return $passwordInput[0].value = value;
+				}
+
+				if (!$element.data('placeholder-enabled')) {
+					return element.value = value;
+				}
+				if (value == '') {
+					element.value = value;
+					// Issue #56: Setting the placeholder causes problems if the element continues to have focus.
+					if (element != safeActiveElement()) {
+						// We can't use `triggerHandler` here because of dummy text/password inputs :(
+						setPlaceholder.call(element);
+					}
+				} else if ($element.hasClass('placeholder')) {
+					clearPlaceholder.call(element, true, value) || (element.value = value);
+				} else {
+					element.value = value;
+				}
+				// `set` can not return `undefined`; see http://jsapi.info/jquery/1.7.1/val#L2363
+				return $element;
+			}
+		};
+
+		if (!isInputSupported) {
+			valHooks.input = hooks;
+			propHooks.value = hooks;
+		}
+		if (!isTextareaSupported) {
+			valHooks.textarea = hooks;
+			propHooks.value = hooks;
+		}
+
+		$(function() {
+			// Look for forms
+			$(document).delegate('form', 'submit.placeholder', function() {
+				// Clear the placeholder values so they don't get submitted
+				var $inputs = $('.placeholder', this).each(clearPlaceholder);
+				setTimeout(function() {
+					$inputs.each(setPlaceholder);
+				}, 10);
+			});
+		});
+
+		// Clear placeholder values upon page reload
+		$(window).bind('beforeunload.placeholder', function() {
+			$('.placeholder').each(function() {
+				this.value = '';
+			});
+		});
+
+	}
+
+	function args(elem) {
+		// Return an object of element attributes
+		var newAttrs = {};
+		var rinlinejQuery = /^jQuery\d+$/;
+		$.each(elem.attributes, function(i, attr) {
+			if (attr.specified && !rinlinejQuery.test(attr.name)) {
+				newAttrs[attr.name] = attr.value;
+			}
+		});
+		return newAttrs;
+	}
+
+	function clearPlaceholder(event, value) {
+		var input = this;
+		var $input = $(input);
+		if (input.value == $input.attr('placeholder') && $input.hasClass('placeholder')) {
+			if ($input.data('placeholder-password')) {
+				$input = $input.hide().next().show().attr('id', $input.removeAttr('id').data('placeholder-id'));
+				// If `clearPlaceholder` was called from `$.valHooks.input.set`
+				if (event === true) {
+					return $input[0].value = value;
+				}
+				$input.focus();
+			} else {
+				input.value = '';
+				$input.removeClass('placeholder');
+				input == safeActiveElement() && input.select();
+			}
+		}
+	}
+
+	function setPlaceholder() {
+		var $replacement;
+		var input = this;
+		var $input = $(input);
+		var id = this.id;
+		if (input.value == '') {
+			if (input.type == 'password') {
+				if (!$input.data('placeholder-textinput')) {
+					try {
+						$replacement = $input.clone().attr({ 'type': 'text' });
+					} catch(e) {
+						$replacement = $('<input>').attr($.extend(args(this), { 'type': 'text' }));
+					}
+					$replacement
+						.removeAttr('name')
+						.data({
+							'placeholder-password': $input,
+							'placeholder-id': id
+						})
+						.bind('focus.placeholder', clearPlaceholder);
+					$input
+						.data({
+							'placeholder-textinput': $replacement,
+							'placeholder-id': id
+						})
+						.before($replacement);
+				}
+				$input = $input.removeAttr('id').hide().prev().attr('id', id).show();
+				// Note: `$input[0] != input` now!
+			}
+			$input.addClass('placeholder');
+			$input[0].value = $input.attr('placeholder');
+		} else {
+			$input.removeClass('placeholder');
+		}
+	}
+
+	function safeActiveElement() {
+		// Avoid IE9 `document.activeElement` of death
+		// https://github.com/mathiasbynens/jquery-placeholder/pull/99
+		try {
+			return document.activeElement;
+		} catch (err) {}
+	}
+
+}(this, document, jQuery));
+  </script>
+  <script src="js/zozo.tabs.min.js"></script>
+    <script type="text/javascript" src="http://www.achieve3000.com/js/app/shadowbox-3.0.3/shadowbox.js"></script>
+
+
+<script type="text/javascript">
+	/*<![CDATA[*/
+		Shadowbox.init({
+			language: 'en',
+			displayNav: false,
+			displayCounter: false,
+			players:  ['img','html','iframe','inline']
+		});
+	/*]]>*/
+	</script>
+
+<script type="text/javascript">
+$(window).load(function() {
+$(window).resize(function(){
+  resizeIframe(document.getElementById('form-register'));
+});
+});
+</script>
+
+    <!-- TABLET STYLES -->
+    <style type="text/css">
+
+    /* depending on designer feedback consider copying some phone styles to this section */
+        @media(max-width:1500px){
+            section.content-blocks:before,
+            section.content-blocks:after{
+                /*background:none;*/
+            }
+
+        }
+        @media(max-width:1200px){
+            .hero__right-content img{
+                max-width:100%;
+
+            }
+        }
+        @media only screen and (max-width: 768px){
+            div.six-column{
+                width:100%;
+            }
+
+
+
+        }
+         @media only screen and (min-width: 769px){
+          .two-column.two-thirds.left {
+              width:57.7%;
+              float:left !important;
+              margin-right:30px;
+          }
+          form.form p.no-label, form.form p.email-pref {
+            width: 55%;
+            margin:0 104px;
+        }
+
+
+         }
+
+        @media  (max-width:1208px){
+
+		  .content{
+		        width: auto;
+		        margin: 0 20px;
+		    }
+		    section.content-blocks{
+		        background: none;
+		    }
+            .small_bar_two .header__icons .icon {
+                margin-right: 1%;
+            }
+            .small_bar_two .header__icons {
+                margin: 0 auto;
+                text-align: center;
+            }
+            section.content-blocks:before{
+    width:20%;
+    height:100%;
+    background-size:cover;
+     background-position:right center;
+}
+section.content-blocks:after{
+    width:20%;
+    height:100%;
+    background-size:cover;
+    background-position:center left;
+}
+   form.form p.no-label, form.form p.email-pref{
+
+    width:46%;
+}
+
+
+		}
+
+
+	@media(max-width:1197px){
+	    #pardot-form .form-field{
+            margin: 20px auto;
+            width: 100%;
+            display: block;
+        }
+
+        #pardot-form select{
+            width: 100%;
+        }
+
+        #pardot-form .pd-select::after {
+            right: 20px;
+            bottom: 92px;
+        }
+        form.form p label{width:30%;}
+
+
+        .custom_form #pardot-form p.errors {
+            color: #FFF;
+            //margin: 5px 31px 10px 61px;
+            background: none repeat scroll 0% 0% #8B0000;
+            //padding: 0px 41px;
+        }
+          form.form p.no-label, form.form p.email-pref{
+
+            width:57%;
+            //margin:0 80px ! important;
+        }
+
+	}
+
+	@media  (max-width:960px){
+        .header__right__button.burger-menu-wrapper,
+        section.mobileMenu .header__right__button{
+            display:block;
+        }
+
+        .hero{
+            height:auto;
+        }
+        .hero .hero__left-content .hero__header {
+            color: #fff;
+        }
+        .hero .hero__left-content{
+            width:90%;
+            text-align:center;
+            display:block;
+            margin:0 auto;
+        }
+
+        .hero .hero__right-content{
+            width:90%;
+            text-align:center;
+            display:block;
+            margin:0 auto;
+            display: table;
+            table-layout: fixed;
+            height: 100%;
+        }
+        .hero .hero__right-content p {margin: 0;}
+        .hero .hero__right-content img { vertical-align: bottom; }
+
+        .small_bar_two{
+            height: auto;
+        }
+
+        .small_bar_two .header__icons .icon {
+            width: 200px;
+            margin:0;
+        }
+
+        .two-column{
+            width:100%;
+            vertical-align:middle;
+        }
+
+        .two-column.one-third{
+            width:50%;
+          //margin-top:0;
+
+        }
+
+		 .two-column.half{
+            width:45%;
+          //margin-top:0;
+
+        }
+
+        div.six-column{
+            width: 60%;
+        }
+
+        .two-column.one-third.right{
+            float:none;
+        }
+
+		.two-column.half.right{
+            float:none;
+        }
+
+        .two-column:first-child{
+            margin-right:0px;
+        }
+        .two-column.two-thirds{
+            width:100%;
+        }
+
+
+        .two-column.two-thirds.right{
+            margin-left:0px;
+            float:none;
+        }
+
+        .two-column.two-thirds.left{
+            margin-right:0px;
+            float:none;
+        }
+        .two-column.one-third.left{
+    width:50%;
+    float:left;
+}
+
+ .two-column.half.left{
+    width:45%;
+    float:left;
+}
+
+  .two-column.one-third.width45{
+    width:42%;
+    float:left;
+}
+
+ .two-column.half.width45{
+    width:45%;
+    float:left;
+}
+
+.two-column.one-third.right{
+    width:42%;
+    float:right !important;
+    }
+
+	  .two-column.half.right{
+    width:45%;
+    float:right !important;
+    }
+
+	}
+	@media (max-width: 1100px) {
+	    .hero__right-content img {padding-right: 0 !important;}
+	}
+	@media  (max-width:965px){
+	      .two-column.two-thirds.left{
+            margin-right:30px;
+            width:53.7%;
+        }
+        .two-column.two-thirds.right.width44{
+            width:53.7%;
+            float:right;
+        }
+
+	}
+
+	@media(max-width:768px){
+	    .small_bar_two .header__icons .icon {
+            width: 175px;
+        }
+        div.six-column{
+
+            width:100%;
+        }
+        .two-column.two-thirds.left {
+
+            width:100%;
+            margin-right:30px;
+        }
+         .two-column.two-thirds.right.width44{
+            width:100%;
+        }
+        .two-column.one-third.right{
+            width:100%;
+            margin-top:0;
+        }
+
+		 .two-column.half.right{
+            width:100%;
+            margin-top:0;
+        }
+        .two-column.two-thirds.right.width44{
+            width:100%;
+        }
+        .two-column.one-third.width45{
+            width:100%;
+        }
+
+		.two-column.half.width45{
+            width:100%;
+        }
+	}
+
+	@media(max-width:590px){
+	    .small_bar_two .header__icons .icon {
+            width: 155px;
+        }
+	}
+
+	@media (min-width:500px) and (max-width:767px){
+	    section{
+	        padding: 40px 0px;
+	    }
+
+	    .hero .hero__left-content .hero__left-content-inner p {
+            font-size: 15px;
+            line-height: 19px;
+        }
+
+        .content-tag .form-title p{
+            width: 100%;
+        }
+
+        .content-tag .form-description p{
+            width: 100%;
+        }
+
+        #pardot-form label{
+            display:none;
+        }
+
+        #pardot-form input[type="submit"]{
+            text-indent:0px;
+        }
+        #pardot-form input, #pardot-form select, #pardot-form submit{
+            border: none;
+            width: 100%;
+            text-indent: 20px;
+        }
+
+        #pardot-form .pd-select::after{
+            right: 30px;
+            bottom: 89px;
+        }
+          form.form p label{
+
+            width:25%;
+        }
+        .custom_form #pardot-form input{
+
+            width:44.6%;
+        }
+        form.form p.no-label, form.form p.email-pref{
+
+            width:42%;
+        }
+        .custom_form #pardot-form select {
+            width: 45.5%;
+        }
+        div.six-column{
+
+            width:100%;
+        }
+        form#pardot-form.form p {
+  clear: left;
+  line-height: 1.4em;
+  //margin: 3px 124px;
+  padding: 3px 2px;
+}
+}
+@media (max-width:576px){
+#Footer .footer__top-content .footer__corporate-headquarters{
+    width:100% !important;
+    padding:20px 0;
+    border-top:1px solid #2d2d2d2;
+}
+
+#FooterGray .footer__top-content .footer__corporate-headquarters{
+    width:100% !important;
+    padding:20px 0;
+}
+
+#Footer .footer__top-content .footer__contact-us{
+    width:100%;
+}
+#FooterGray .footer__top-content .footer__contact-us{
+    width:100%;
+}
+}
+    </style>
+    <!-- PHONE STYLES -->
+    <style type="text/css">
+	   @media (max-width:499px){
+	       section{
+	           padding: 40px 0px;
+	       }
+	       #list-right { float:none;}
+	        .hero .hero__left-content .hero__left-content-inner p {
+                font-size: 15px;
+                line-height: 19px;
+            }
+            .hero .hero__left-content .hero__left-content-inner p img {
+                float: none;
+                display: block;
+                margin: auto;
+                margin-bottom:12px;
+            }
+
+             .hero .hero__right-content {
+               width:100%;
+               max-height:350px;
+               height:auto;
+               vertical-align:bottom;
+
+            }
+
+	        .small_bar_two {
+                height: auto;
+            }
+
+            .small_bar_two .header__icons div:last-child {
+                margin-bottom: 15px;
+            }
+
+            .small_bar_two .header__icons .icon {
+                width: 24%;
+                margin-left: 10px;
+            }
+
+            .small_bar_two .header__icons .icon img {
+                max-width: 72px;
+                width: 80%;
+                height: 80%;
+            }
+
+            .content-tag .form-title p{
+                width: 100%;
+            }
+
+            .content-tag .form-description p{
+                width: 93%;
+            }
+
+            #pardot-form{
+                width:100%;
+            }
+            #pardot-form .form-field{
+            margin: 10px;
+            width: 100%;
+            vertical-align:bottom;
+        }
+                #pardot-form .form-field{
+                    margin: 20px auto;
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                #pardot-form label{
+                    display:none;
+                }
+                #pardot-form input[type="submit"]{
+                    text-indent:0px;
+                }
+                #pardot-form input, #pardot-form select, #pardot-form submit{
+                    border: none;
+                    width: 100%;
+                    text-indent: 20px;
+                    padding:0px;
+                }
+
+                #pardot-form select{
+                    padding: 0px;
+                    width:inherit;width: 100% !important;
+                }
+
+                #pardot-form .pd-select::after{
+                    right: 30px;
+                    bottom: 84px;
+                }
+
+           #Footer .footer__top-content{
+               padding:8px 0px 0px;
+           }
+		   #FooterGray .footer__top-content{
+               padding:8px 0px 0px;
+           }
+                #Footer .footer__top-content .footer__contact-us{
+                    width:100% !important;
+                    display:block;
+                    border-bottom: 1px #2d2d2d solid;
+                    padding: 32px 0px;
+                    float:none;
+                    margin:0 !important;
+                }
+				#FooterGray .footer__top-content .footer__contact-us{
+                    width:100% !important;
+                    display:block;
+                    padding: 32px 0px;
+                    float:none;
+                    margin:0 !important;
+                }
+
+                #Footer .footer__top-content .footer__corporate-headquarters{
+                    width:100% ;
+                    display:block;
+                    border-bottom: 1px #2d2d2d solid;
+                    padding: 32px 0px;
+                }
+				#FooterGray .footer__top-content .footer__corporate-headquarters{
+                    width:100% ;
+                    display:block;
+                    padding: 32px 0px;
+                }
+                #Footer .footer__top-content .footer__social-media-links{
+                    width:94%;
+                    display:block;
+                    padding: 32px 0px;
+                    float:none;
+                    clear:both;
+                }
+				#FooterGray .footer__top-content .footer__social-media-links{
+                    width:94%;
+                    display:block;
+                    padding: 32px 0px;
+                    float:none;
+                    clear:both;
+                }
+                #Footer .footer__bottom-content{
+                    border-top:none;
+                }
+				#FooterGray .footer__bottom-content{
+                    border-top:none;
+                }
+
+                    #Footer .footer__bottom-content .footer-navigation{
+                        display:none;
+                    }
+
+                    #Footer .footer__bottom-content .footer-copyright{
+                        position: relative;
+                        top: -3em;
+                    }
+
+                        #Footer .footer__bottom-content .footer-copyright p{
+                            text-align:center;
+                        }
+
+                    #Footer .footer__bottom-content .footer-mvp-creditline{
+                        float: none;
+
+                    }
+                        #Footer .footer__bottom-content .footer-mvp-creditline p{
+                            text-align:center;
+
+                        }
+
+        }
+
+        @media(max-width:440px){
+            .header__right__button{
+                display:none;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .mobileMenu {display: none;}
+            .width100 iframe{width: 100%;}
+            .width100  {width: 100%;}
+            section.content-blocks:before, section.content-blocks:after {background: none;}
+
+        }
+        @media only screen and (min-width: 768px) {
+        .two-column.two-thirds.width45 {width: 45%;}
+        .two-column.one-third.right.width44 {width: 44%;}
+		 .two-column.half.right.width44 {width: 44%;}
+        .width100 iframe{width: 100%;}
+        div.six-column{60%}
+        }
+        @media only screen and (max-width: 1023px) {
+            .two-column.two-thirds.width45 {width: 100%;}
+            .two-column.one-third.right.width44 {float: left;}
+			.two-column.half.right.width44 {float: left;}
+
+        }
+        @media only screen and (max-width: 900px) {
+              iframe.register {width:94%;}
+              #Footer .footer__top-content .footer__contact-us{
+                  width:50%;
+                  margin:0 0 30px;
+              }
+			  #FooterGray .footer__top-content .footer__contact-us{
+                  width:50%;
+                  margin:0 0 30px;
+              }
+              #Footer .footer__top-content .footer__corporate-headquarters{
+                  width:50%;
+              }
+			  #FooterGray .footer__top-content .footer__corporate-headquarters{
+                  width:50%;
+              }
+                #Footer .footer__top-content .footer__social-media-links{
+                  width:100%;
+                  padding:20px 0;
+                  border-top:1px solid #2d2d2d;
+                  text-align:center;
+              }
+
+
+        }
+        @media (min-device-width : 320px) and (max-device-width : 640px){
+                div.six-column {
+                    width: 100% !important;
+                }
+                form.form p label {
+                    width: 117px;
+                }
+                form.form p label{width:20%;}
+              .custom_form #pardot-form input{width:48.6%;margin:4px 2px;}
+              .custom_form #pardot-form select{width:54.2%;margin:4px 2px}
+              .custom_form #pardot-form label{max-width:36%;min-width:21%;}
+              .custom_form #pardot-form input, .custom_form #pardot-form submit{width:53%;}
+        .custom_form #pardot-form p.errors{
+            color:#fff;
+           // margin: 5px 0 10px 0;
+            background: none repeat scroll 0% 0% #8B0000;
+            //padding: 0 20px;
+        }
+        form#pardot-form.form p {
+                    clear: left;
+                    line-height: 1.4em;
+                    margin: 3px 134px;
+                    padding: 3px 2px;
+}
+
+form.form p.no-label, form.form p.email-pref{
+    width:60%;
+}
+#Footer .footer__top-content .footer__contact-us{
+    width:100% !important;
+    float:none;
+}
+#FooterGray .footer__top-content .footer__contact-us{
+    width:100% !important;
+    float:none;
+}
+#Footer .footer__top-content .footer__corporate-headquarters{
+    width:100% !important;
+    float:none;
+}
+#FooterGray .footer__top-content .footer__corporate-headquarters{
+    width:100% !important;
+    float:none;
+}
+#Footer .footer__top-content .footer__social-media-links{
+    width:92%;
+    margin-bottom:20px;
+}
+
+        }
+
+        @media (min-device-width : 768px) and (max-device-width : 1024px){
+                div.six-column {
+                    width: 62% !important;
+                }
+               form.form p label{width:35%;}
+              .custom_form #pardot-form input{width:48.6%;margin:4px 2px;}
+               .custom_form #pardot-form select{width:57.2%;margin:4px 2px}
+              .custom_form #pardot-form label{width:25%;}
+              .custom_form #pardot-form input, .custom_form #pardot-form submit{width:56%;}
+               .custom_form #pardot-form p.errors{
+            color:#fff;
+
+            background: none repeat scroll 0% 0% #8B0000;
+            padding: 0 41px;
+        }
+
+
+
+
+
+
+        }
+        @media (min-width: 960px) {
+              .two-column.one-third{width:39%;
+              //margin-top:0;
+                 float:right;
+              }
+
+			   .two-column.half{width:45%;
+              //margin-top:0;
+                 float:right;
+              }
+
+              .custom_form #pardot-form label {
+                    width: 28%;
+                }
+                .custom_form #pardot-form input, {width:63%;}
+                form.form p.no-label, form.form p.email-pref {
+                    width: 50%;
+                    margin: 0 122px !important;
+                }
+                .footer__contact-us {
+
+  width: 35%;
+
+}
+.footergray__contact-us {
+
+  width: 35%;
+
+}
+
+
+
+
+        }
+	</style>
+
+
+
+	</body>
+
+</html>
+
+
+
+</div>
