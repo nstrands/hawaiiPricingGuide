@@ -38,7 +38,7 @@
 
 	    body {
 	        font-family: 'Open Sans', sans-serif;
-	        padding-top: 50px;
+	        /*padding-top: 50px;*/
 	        background-color: #fff;overflow-x: hidden;
 	        color: #666666;
 	        font-size: 18px;
@@ -67,15 +67,15 @@
 
 	/******************************** NAVBAR ********************************/
 
-	    .navbar {
+	    /*.navbar {
 	        min-height: 111px;
-	    }
+	    }*/
 
 	    .navbar-inverse { /* background */
 	        background-color: #ffffff;
-	        -webkit-box-shadow: -3px -3px 5px 4px rgba(0,0,0,0.15);
+	        /*-webkit-box-shadow: -3px -3px 5px 4px rgba(0,0,0,0.15);
 	        -moz-box-shadow: -3px -3px 5px 4px rgba(0,0,0,0.15);
-	        box-shadow: -3px -3px 5px 4px rgba(0,0,0,0.15);
+	        box-shadow: -3px -3px 5px 4px rgba(0,0,0,0.15);*/
 	        border: none;
 	    }
 
@@ -94,8 +94,8 @@
 	    .small_bar_one{
 	            background:#303030;
 	            padding: 5px 0px;
-	              position: relative;
-	  top: 61px;
+	            /*position: relative;
+	  					top: 61px;*/
 	        }
 
 	        .small_bar_one .site-slogan{
@@ -972,6 +972,37 @@
 
 
 	      }
+				.back-top{
+		      position: fixed;
+		      z-index: 9999;
+		      bottom: 1em;
+		      right: 1em;
+		      text-align: center;
+		      line-height: 10px;
+		      color: #f5f5f5;
+		      background-color: #333333;
+		      cursor: pointer;
+		      border: 0;
+		      border-radius: 5px;
+		      text-decoration: none;
+		      transition: opacity 0.2s ease-out;
+		      opacity: 0;
+		      padding: 15px 8px;
+		      font-weight: bold;
+		      font-size: 15px;
+		      font-family: 'Open Sans', sans-serif;
+		   }
+		  .back-top.show{
+		    opacity: 1;
+		  }
+		  .back-top:hover{
+		    color:#f5f5f5;
+		    text-decoration:none;
+		  }
+		  .back-top:focus{
+		    color: #f5f5f5;
+		    text-decoration:none;
+		  }
 	@media only screen and (max-width: 1200px) {
 	  .hiddenOnSmall {
 	    display: none !important;
@@ -1281,10 +1312,11 @@
         .dependentFieldSlave {
 		    display: none !important;
 		}
+
 	</style>
 
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-inverse " role="navigation">
 		    <div class="container-fluid">
 		        <div class="navbar-header">
 		            <a href="http://www.achieve3000.com" class="Achieve3000logo" target="_self"></a>
@@ -1313,7 +1345,7 @@
 						<img class="img-responsive" src="http://storage.pardot.com/11012/147751/Check_Circle_Icon_100x100.png" style=" width: 50px; height: auto; margin-left: auto; margin-right: auto;">
 					</div>
 					<div>
-						<a href="#" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">SBA Success</a>
+						<a href="#sbaSuccess" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">SBA Success</a>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6" style="text-align: center;">
@@ -1321,7 +1353,7 @@
 						<img class="img-responsive" src="http://storage.pardot.com/11012/147751/Check_Circle_Icon_100x100.png" style=" width: 50px; height: auto; margin-left: auto; margin-right: auto;">
 					</div>
 					<div>
-						<a href="#" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">SBA Success</a>
+						<a href="#impactData" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">Impact Data</a>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6" style="text-align: center;">
@@ -1329,7 +1361,7 @@
 						<img class="img-responsive" src="http://storage.pardot.com/11012/147751/Check_Circle_Icon_100x100.png" style=" width: 50px; height: auto; margin-left: auto; margin-right: auto;">
 					</div>
 					<div>
-						<a href="#" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">SBA Success</a>
+						<a href="#studentEngagement" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">Student Engagement</a>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6" style="text-align: center;">
@@ -1337,7 +1369,7 @@
 						<img class="img-responsive" src="http://storage.pardot.com/11012/147751/Check_Circle_Icon_100x100.png" style=" width: 50px; height: auto; margin-left: auto; margin-right: auto;">
 					</div>
 					<div>
-						<a href="#" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">SBA Success</a>
+						<a href="#teacherEngagement" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">Teacher Engagement</a>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6" style="text-align: center;">
@@ -1345,7 +1377,7 @@
 						<img class="img-responsive" src="http://storage.pardot.com/11012/147751/Check_Circle_Icon_100x100.png" style=" width: 50px; height: auto; margin-left: auto; margin-right: auto;">
 					</div>
 					<div>
-						<a href="#" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">SBA Success</a>
+						<a href="#leadershipEngagement" style="color: #ffffff; font-size: 14px; line-height: 24px; font-family: 'Open Sans', sans-serif; font-weight: 400;">Leadership Engagement</a>
 					</div>
 				</div>
 			</div>
@@ -1390,18 +1422,18 @@
 		        </div>
 		    </div>
 		</div>
-		<div class="mainarea" style="padding: 40px 20px; margin: 0; ">
+		<div class="mainarea" style="padding: 40px 20px; margin: 0; " id="sbaSuccess">
 			<div class="container layout">
 		        <!--Section 2 -->
 		        <div class="row" >
 		            <div class="col-md-8 col-sm-12">
 		                <div style="font-family: 'Open Sans', sans-serif; font-size:18px!important; font-weight:200; margin-bottom:30px; color:#666666">
-		                    <h2 pardot-region="third_section_heading">
+		                    <h2 pardot-region="section_2_header">
 		                    	<strong style="font-weight: 600;">
 		                    		HAWAI’I EDITION FOR SBA SUCCESS
 		                    	</strong>
 		                    </h2>
-                        	<div pardot-region="third_sectiondesc">
+                        	<div pardot-region="section_2_copy">
 
                         		<p>
 														Featuring a custom curriculum aligned with Hawai’i standards, your Hawai’i Edition ensures all learners receive the targeted instruction and daily practice they need for SBA success! For 2018-2019, our fully differentiated and blended platform will now offer:
@@ -1476,9 +1508,9 @@
 						</div>
 		    </div>
 		</div>
-		<div class="mainarea" style="padding: 40px 20px; margin: 0;  background-color: #f4f3f4;">
+		<div class="mainarea" style="padding: 40px 20px; margin: 0;  background-color: #f4f3f4;" id="impactData">
 			<div class="container layout">
-		        <!--Section 2 -->
+		        <!--Section 3 -->
 		        <div class="row" >
 						<div class="col-md-5 col-sm-12  custom_form" style="">
 								<div style="padding-bottom: 80px;" class="row">
@@ -1487,12 +1519,12 @@
 						</div>
 								<div class="col-md-7 col-sm-12">
 		                <div style="font-family: 'Open Sans', sans-serif; font-size:18px!important; font-weight:200; margin-bottom:30px; color:#666666">
-		                    <h2 pardot-region="third_section_heading">
+		                    <h2 pardot-region="section_3_header">
 		                    	<strong style="font-weight: 600;">
 													THE IMPACT OF OUR PARTNERSHIP: <br>LITERACY SUCCESS IN HAWAI’I
 		                    	</strong>
 		                    </h2>
-                        	<div pardot-region="third_sectiondesc">
+                        	<div pardot-region="section_3_copy">
 
                         		<p>
 														The partnership between Achieve3000 and Hawai’i schools is dramatically accelerating achievement for all students, helping learners of all ability levels build the confidence they need to succeed in school, in their community, and beyond.
@@ -1504,18 +1536,18 @@
 		        </div>
 		    </div>
 		</div>
-		<div class="mainarea" style="padding: 40px 20px; margin: 0;">
+		<div class="mainarea" style="padding: 40px 20px; margin: 0;" id="studentEngagement">
 			<div class="container layout">
-		        <!--Section 2 -->
+		        <!--Section 4 -->
 		        <div class="row" >
 		            <div class="col-md-8 col-sm-12">
 		                <div style="font-family: 'Open Sans', sans-serif; font-size:18px!important; font-weight:200; margin-bottom:30px; color:#666666">
-		                    <h2 pardot-region="third_section_heading">
+		                    <h2 pardot-region="section_4_header">
 		                    	<strong style="font-weight: 600;">
 		                    		Student Engagement
 		                    	</strong>
 		                    </h2>
-                        	<div pardot-region="third_sectiondesc">
+                        	<div pardot-region="section_4_copy">
 
                         		<p>
                         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci tellus, hendrerit eu rutrum sed, condimentum nec lectus. Fusce a euismod quam. Vestibulum interdum molestie sapien non molestie. Praesent eget diam suscipit, viverra massa et, laoreet dolor. Phasellus vel neque et justo ultricies consequat ut sit amet purus. Ut maximus faucibus pulvinar. Nulla facilisi. Integer dignissim sapien in tempus euismod. Donec auctor pulvinar ullamcorper. Integer feugiat tempus elit, eu pellentesque nunc congue vel. Integer pharetra a lectus at posuere. Curabitur vel nisl tempus, dignissim leo et, aliquam erat.
@@ -1531,9 +1563,9 @@
 		        </div>
 		    </div>
 		</div>
-		<div class="mainarea" style="padding: 40px 20px; margin: 0; background-color: #f4f3f4;">
+		<div class="mainarea" style="padding: 40px 20px; margin: 0; background-color: #f4f3f4;" id="teacherEngagement">
 			<div class="container layout">
-		        <!--Section 2 -->
+		        <!--Section 5 -->
 		        <div class="row" >
 						<div class="col-md-4 col-sm-12  custom_form" style="">
 								<div style="padding-bottom: 80px;" class="row">
@@ -1542,12 +1574,12 @@
 						</div>
 								<div class="col-md-8 col-sm-12">
 		                <div style="font-family: 'Open Sans', sans-serif; font-size:18px!important; font-weight:200; margin-bottom:30px; color:#666666">
-		                    <h2 pardot-region="third_section_heading">
+		                    <h2 pardot-region="section_5_header">
 		                    	<strong style="font-weight: 600;">
 		                    		Teacher Engagement
 		                    	</strong>
 		                    </h2>
-                        	<div pardot-region="third_sectiondesc">
+                        	<div pardot-region="section_5_copy">
 
                         		<p>
                         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci tellus, hendrerit eu rutrum sed, condimentum nec lectus. Fusce a euismod quam. Vestibulum interdum molestie sapien non molestie. Praesent eget diam suscipit, viverra massa et, laoreet dolor. Phasellus vel neque et justo ultricies consequat ut sit amet purus. Ut maximus faucibus pulvinar. Nulla facilisi. Integer dignissim sapien in tempus euismod. Donec auctor pulvinar ullamcorper. Integer feugiat tempus elit, eu pellentesque nunc congue vel. Integer pharetra a lectus at posuere. Curabitur vel nisl tempus, dignissim leo et, aliquam erat.
@@ -1559,18 +1591,18 @@
 		        </div>
 		    </div>
 		</div>
-		<div class="mainarea" style="padding: 40px 20px; margin: 0;">
+		<div class="mainarea" style="padding: 40px 20px; margin: 0;" id="leadershipEngagement">
 			<div class="container layout">
-		        <!--Section 2 -->
+		        <!--Section 6 -->
 		        <div class="row" >
 		            <div class="col-md-8 col-sm-12">
 		                <div style="font-family: 'Open Sans', sans-serif; font-size:18px!important; font-weight:200; margin-bottom:30px; color:#666666">
-		                    <h2 pardot-region="third_section_heading">
+		                    <h2 pardot-region="section_6_header">
 		                    	<strong style="font-weight: 600;">
 		                    		Leadership Engagement
 		                    	</strong>
 		                    </h2>
-                        	<div pardot-region="third_sectiondesc">
+                        	<div pardot-region="section_6_copy">
 
                         		<p>
                         			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin orci tellus, hendrerit eu rutrum sed, condimentum nec lectus. Fusce a euismod quam. Vestibulum interdum molestie sapien non molestie. Praesent eget diam suscipit, viverra massa et, laoreet dolor. Phasellus vel neque et justo ultricies consequat ut sit amet purus. Ut maximus faucibus pulvinar. Nulla facilisi. Integer dignissim sapien in tempus euismod. Donec auctor pulvinar ullamcorper. Integer feugiat tempus elit, eu pellentesque nunc congue vel. Integer pharetra a lectus at posuere. Curabitur vel nisl tempus, dignissim leo et, aliquam erat.
@@ -1697,11 +1729,57 @@
 		                    </div>
 		                </div>
 		            </div>
+
 		        </div>
 		    </div>
 		</div>
+		<div class="container-fluid">
+
+					  <div class="botline"></div>
+
+<div class="row">
+  <div class="col-md-9 col-lg-9">
+    <div class="contentbot">
+
+    </div>
+  </div>
+  <div class="col-md-3 col-lg-3">
+    <a href="" class="back-top">Back To Top</a>
+  </div>
+</div>
+            </div>
 
 		<script type="text/javascript" src="http://ww2.achieve3000.com/l/11012/2017-06-27/5x88jx/11012/171173/jquery.js"></script>
 		<script type="text/javascript" src="http://ww2.achieve3000.com/l/11012/2017-06-27/5x88gx/11012/171171/lity.js"></script>
+		<script type="text/javascript">
+		/*$('.back-top').on('click', function (e) {
+			 e.preventDefault();
+			 $('html,body').animate({
+					 scrollTop: 0
+			 }, 700);
+	 });*/
+	 if ($('.back-top').length) {
+		var scrollTrigger = 100, // px
+				backToTop = function () {
+						var scrollTop = $(window).scrollTop();
+						if (scrollTop > scrollTrigger) {
+								$('.back-top').addClass('show');
+						} else {
+								$('.back-top').removeClass('show');
+						}
+				};
+		backToTop();
+		$(window).on('scroll', function () {
+				backToTop();
+		});
+		$('.back-top').on('click', function (e) {
+				e.preventDefault();
+				$('html,body').animate({
+						scrollTop: 0
+				}, 700);
+		});
+}
+
+		</script>
 	</body>
 </html>
